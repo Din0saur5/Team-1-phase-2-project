@@ -67,7 +67,7 @@ const About = () => {
       
       
       <div className="about-footer">       
-        <p>&copy; {new Date().getFullYear()} Game Launch Web App. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} JDM Games Inc. All rights reserved.</p>
 
       </div>
     </div>
