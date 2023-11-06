@@ -11,10 +11,7 @@ import ColorSchemesExample from '../components/Navbar.jsx';
 const About = () => {
   return (
     <div className="about">
-      
       <ColorSchemesExample /> 
-  
-      
       <div className="about-header">
         <h1>DreamScape: VR Beyond Imagination</h1>
       </div>
@@ -22,13 +19,12 @@ const About = () => {
       <div className="guide-intro">
         <section className="about-section">
           <h2>Explore DreamScape</h2>
-            <p> In a near-future world, "DreamScape: Beyond Imagination" offers boundless freedom, allowing users to bring their wildest dreams to life in hyper-realistic virtual reality. The DreamScape Generator turns fantasies into immersive realities, with users crafting their worlds, from fantasy realms to sci-fi cities. As players explore their own dreamscapes and unravel the mysteries of a hidden collective realm, they must band together to uncover the truth behind unintended consequences and navigate a web of stories and challenges.
-            </p>
+            <p> In a near-future world, "DreamScape: Beyond Imagination" offers boundless freedom, allowing users to bring their wildest dreams to life in hyper-realistic virtual reality. The DreamScape Generator turns fantasies into immersive realities, with users crafting their worlds, from fantasy realms to sci-fi cities. As players explore their own dreamscapes and unravel the mysteries of a hidden collective realm, they must band together to uncover the truth behind unintended consequences and navigate a web of stories and challenges.</p>
         </section>
       </div>
 
       <div className="guide-video">
-        <Carousel>
+        <Carousel indicators={true}>
           <Carousel.Item>
             <CarouselVideos
               text="Sample VR Gameplay Clip #1"
@@ -52,7 +48,7 @@ const About = () => {
       </div>
 
       <div className="guide-screenshot">
-          <Carousel>
+          <Carousel indicators={true}>
             <Carousel.Item>
             <CarouselImages 
               text="Sample VR Gameplay Screenshot #1"
@@ -70,10 +66,9 @@ const About = () => {
       </div>
       
       
-      <div className="about-fixed-background">
-        <div className="footer">
+      <div className="about-footer">       
         <p>&copy; {new Date().getFullYear()} Game Launch Web App. All rights reserved.</p>
-        </div>
+
       </div>
     </div>
   );
