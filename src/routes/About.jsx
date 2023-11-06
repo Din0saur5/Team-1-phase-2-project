@@ -57,8 +57,8 @@ const About = () => {
             </Carousel.Item>
             <Carousel.Item>
             <CarouselImages 
-              text="Sample VR Gameplay Screenshot #1"
-              imageSrc="https://www.cnet.com/a/img/resize/4b9371ab22a06efb2e0d52b29dd189ce26919e4c/hub/2018/11/30/9b161b11-62a2-4db5-a52d-401695d0ec46/skyrim-vr-screenshot-02-us-12jun17.jpg?auto=webp&width=1200" />
+              text="Sample VR Gameplay Screenshot #2"
+              imageSrc="https://i.pcmag.com/imagery/lineups/0051F70Ae3AgFubSiV7XUoe-1.fit_lim.size_1600x900.v1593113164.jpg" />
           
             </Carousel.Item>
           {/* Add more Carousel.Item elements as needed */}
