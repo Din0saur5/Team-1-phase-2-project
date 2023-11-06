@@ -7,18 +7,13 @@ import CarouselImages from '../components/CarouselImages.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ColorSchemesExample from '../components/Navbar.jsx'; 
 
+
 const About = () => {
   return (
     <div className="about">
       
       <ColorSchemesExample /> 
-      <div className="guide-top">
-        <Link to="/">Home</Link>
-        <br />
-        <Link to="/about">About</Link>
-        <br />
-        <Link to="/sign-up">Sign-up</Link>
-      </div>
+  
       
       <div className="about-header">
         <h1>DreamScape: VR Beyond Imagination</h1>
