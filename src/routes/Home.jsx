@@ -1,15 +1,105 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import Plx from "react-plx"
+import '../components/home.css'
 const Home = () => {
   return (
-    <div>
-      <p>Hello World</p>
-      <Link to='/'>home</Link>
-      <br/>
-       <Link to='/about'>about</Link>
-       <br/>
-       <Link to='/sign-up'>sign-up</Link>
+    <div >
+      
+       <Plx
+        parallaxData={[
+          {
+            start: 0,
+            end: 700,
+            easing: "ease-in",
+            properties: [
+              {
+                startValue: 1,
+                endValue: 1.9,
+                property: "scale"
+              }
+            ]
+          }
+        ]}
+        style={{
+          position: "fixed",
+          top: 0,
+          width: "100%",
+          zIndex: 100
+        }}
+      >
+        <img style={{ width: "100%" }} src="/images/bg.png" alt="foreground" />
+      </Plx>
+      <Plx
+        parallaxData={[
+          {
+            start: 0,
+            end: 800,
+            properties: [
+              {
+                startValue: 1.1,
+                endValue: 1.2,
+                property: "scale"
+              }
+            ]
+          }
+        ]}
+        style={{  
+          position: "fixed",
+          left: '10%',
+          top: 0,
+          width: "80%"
+        }}
+      >
+        <img style={{ width: "100%" }} src="/images/hero-v1.png" alt="background" />
+      </Plx>
+      <Plx
+        parallaxData={[
+          {
+            start: 0,
+            end: 850,
+            properties: [
+              {
+                startValue: 0,
+                endValue: 1,
+                property: "opacity"
+              }
+            ]
+          }
+        ]}
+        style={{
+          position: "fixed",
+          left: 0,
+          top: "25vw",
+          width: "100%"
+        }}
+      >
+        <div className='title'>
+        <h1 class="neon" data-text="U"><span class="flicker-slow">Dream</span>Scape <span class="flicker-fast">VR</span> </h1>
+       <div className='btn'><Link  to='/about'>Learn More</Link></div>
+        <Link to='/sign-up'>Register</Link>
+        <Link to='/demo'>Try Demo</Link>
+        </div>
+      </Plx>
+      <div
+        style={{
+          position: "fixed",
+          left: 0,
+          top: 0,
+          zIndex: 200,
+          paddingTop: "56%",
+          height: "400vh",
+          width: "100%"
+        }}
+      >
+        <div
+          style={{
+            background: "#000",
+            height: "100%"
+          }}
+        ></div>
+      </div>
+      <div className='deep-background'></div>
     </div>
   )
 }
