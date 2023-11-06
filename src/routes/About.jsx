@@ -28,13 +28,13 @@ const About = () => {
           <Carousel.Item>
             <CarouselVideos
               text="Sample VR Gameplay Clip #1"
-              videoSrc="https://www.youtube.com/embed/OlygkDCGTcM?si=COfodFWrwUIy6E8s&amp;start=0"
+              videoSrc="https://www.youtube.com/embed/hEdzv7D4CbQ?si=e6RuG4BGY3tVDNbn&amp;start=720"
             />
           </Carousel.Item>
           <Carousel.Item>
             <CarouselVideos
               text="Sample VR Gameplay Clip #2"
-              videoSrc="https://www.youtube.com/embed/hEdzv7D4CbQ?si=e6RuG4BGY3tVDNbn&amp;start=720"
+              videoSrc="https://www.youtube.com/embed/OlygkDCGTcM?si=COfodFWrwUIy6E8s&amp;start=0"
              
             />
           </Carousel.Item>
@@ -52,13 +52,13 @@ const About = () => {
             <Carousel.Item>
             <CarouselImages 
               text="Sample VR Gameplay Screenshot #1"
-              imageSrc="https://i.ytimg.com/vi/wDMzJr39Jz8/maxresdefault.jpg" />
+              imageSrc="https://i.pcmag.com/imagery/lineups/0051F70Ae3AgFubSiV7XUoe-1.fit_lim.size_1600x900.v1593113164.jpg" />
           
             </Carousel.Item>
             <Carousel.Item>
             <CarouselImages 
               text="Sample VR Gameplay Screenshot #2"
-              imageSrc="https://i.pcmag.com/imagery/lineups/0051F70Ae3AgFubSiV7XUoe-1.fit_lim.size_1600x900.v1593113164.jpg" />
+              imageSrc="https://www.cnet.com/a/img/resize/b92d26f1a9d9ee8847cda813f760fb0c7b233176/hub/2021/07/20/005cf121-512a-42a8-8abb-39e0045e8af0/demeo-realm-of-rat-king-cards-screenshot.jpg?auto=webp&width=1200" />
           
             </Carousel.Item>
           {/* Add more Carousel.Item elements as needed */}
