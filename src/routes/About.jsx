@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../components/about.css';
+import '../components/countdown.css';
 import Carousel from 'react-bootstrap/Carousel';
 import CarouselVideos from '../components/CarouselVideos';
 import CarouselImages from '../components/CarouselImages.jsx';
@@ -15,6 +15,10 @@ const About = () => {
       <NavbarComponent /> 
       <div className="about-header">
         <h1>DreamScape: VR Beyond Imagination</h1>
+      </div>
+
+      <div className="countdown-container">
+        <Countdown />
       </div>
     
       <div className="guide-intro">
@@ -65,14 +69,11 @@ const About = () => {
         </Carousel>
       </div>
       
-      <div className="about-footer">
+      <div class="empty-space"></div>
+      
+      <footer className="about-footer">
         <p>&copy; {new Date().getFullYear()} JDM Games Inc. All rights reserved.</p>
-      </div>
-  
-      <div className="countdown-container">
-        <Countdown />
-      </div>
-
+      </footer>
     </div>
   );
 };

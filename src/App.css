@@ -29,12 +29,14 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-html, body { max-width: 100%; overflow-x: hidden; overscroll-behavior: none;  }
+html, body { max-width: 100%; overflow-x: none; overscroll-behavior: none;  }
+
+/* About */
 
 .about {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: calc(100vh - 80px);
   position: relative;
 }
 
@@ -56,6 +58,18 @@ html, body { max-width: 100%; overflow-x: hidden; overscroll-behavior: none;  }
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+}
+
+.about-footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  height: 75px;
 }
 
 header {
@@ -86,14 +100,25 @@ p {
   padding: 20px 0;
 }
 
+/* Carousel */
+
 .carousel {
   margin: 20px 0;
 }
 
-.carousel-caption {
+.carousel .text {
   z-index: 1;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 1200px;
+  max-width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
-
 
 .carousel-item {
   text-align: center;
@@ -103,17 +128,6 @@ p {
 .carousel-videos {
   font-size: 18px;
   margin-bottom: 10px;
-}
-
-.about-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #333;
-  color: white;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  z-index: 2;
 }
 
 .guide-platform {
@@ -127,4 +141,8 @@ p {
 .guide-top {
   text-align: right;
   padding: 20px;
+}
+
+.empty-space {
+  height: 250px; 
 }
