@@ -5,13 +5,13 @@ import Carousel from 'react-bootstrap/Carousel';
 import CarouselVideos from '../components/CarouselVideos';
 import CarouselImages from '../components/CarouselImages.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ColorSchemesExample from '../components/Navbar.jsx'; 
+import NavbarComponent from '../components/Navbar.jsx';
 
 
 const About = () => {
   return (
     <div className="about">
-      <ColorSchemesExample /> 
+      <NavbarComponent /> 
       <div className="about-header">
         <h1>DreamScape: VR Beyond Imagination</h1>
       </div>
