@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
+
 * {
   
   box-sizing: border-box;
@@ -29,7 +30,8 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-html, body { max-width: 100%; overflow-x: hidden; }
+html, body { max-width: 100%; overflow-x: hidden; overscroll-behavior: none;  }
+
 
 /* About Container */
 

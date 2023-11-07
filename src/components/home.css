@@ -1,0 +1,79 @@
+body{
+    height: 200vh;
+    
+  }
+
+  .deep-background{
+   height:200vh;
+   width: 100%;
+    background-color: #102331;
+  }
+
+  .title{
+    
+    position: absolute;
+    left: 50%;
+  }
+  @font-face {
+    font-family: neon;
+    src: url('/fonts/Clip.ttf');
+  }
+  @font-face {
+    font-family: banuk;
+    src: url('/fonts/banuk.regular.ttf');
+  }
+  @font-face {
+    font-family: neon2;
+    src: url('/fonts/NEON____.TTF');
+  }
+  @font-face {
+    font-family: neon3;
+    src: url('/fonts/PSIPBRG_.TTF');
+  }
+ 
+  @font-face {
+    font-family: neon4;
+    src: url('/fonts/NEON CLUB MUSIC (Font by Manuel Viergutz)/NEON CLUB MUSIC_light.otf');
+  }
+  @font-face {
+    font-family: neon4lg;
+    src: url('/fonts/NEON CLUB MUSIC (Font by Manuel Viergutz)/NEON CLUB MUSIC_medium.otf');
+  }
+  
+  .neon{
+    text-align:center;
+    font-size: 80pt;
+    margin-top: -10%;
+    font-family: 'neon4';
+    color: #65417a;
+    transform: translate(-50%, -50%);
+    font-weight: 400;
+    letter-spacing: 8px;
+    text-shadow: 1px 0px 4px #FFD5FF, 2px 0px 4px #FFD5FF, 3px 0px 4px #FFD5FF, 2px 0px 3px #D42CCA, 2px 3px 15px #D42CCA, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA,40px 0vw 200px #D42CCA;
+  }
+  
+  .flicker-slow{
+    font-family: 'neon4';
+    animation: flicker 3s linear infinite;
+  }
+  
+  .flicker-fast{
+    font-family: 'neon';
+    animation: flicker 1s linear infinite;
+  }
+  
+  @keyframes flicker {
+      0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+         
+      opacity: .99;
+          
+      }
+      20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+          opacity: 0.4;
+      }
+  }
+  
+ btn{
+
+    border: 5px solid #102331;
+ }
