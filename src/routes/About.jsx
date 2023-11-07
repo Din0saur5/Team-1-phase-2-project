@@ -6,15 +6,18 @@ import CarouselVideos from '../components/CarouselVideos';
 import CarouselImages from '../components/CarouselImages.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ColorSchemesExample from '../components/Navbar.jsx'; 
-
+import Countdown from '../components/countdown.jsx';
 
 const About = () => {
   return (
     <div className="about">
-      <ColorSchemesExample /> 
+      <ColorSchemesExample />
+       
       <div className="about-header">
         <h1>DreamScape: VR Beyond Imagination</h1>
       </div>
+
+      <div><Countdown /></div>
     
       <div className="guide-intro">
         <section className="about-section">
@@ -28,7 +31,7 @@ const About = () => {
           <Carousel.Item>
             <CarouselVideos
               text="Sample VR Gameplay Clip #1"
-              videoSrc="https://www.youtube.com/embed/hEdzv7D4CbQ?si=e6RuG4BGY3tVDNbn&amp;start=720"
+              videoSrc="https://www.youtube.com/embed/hEdzv7D4CbQ?si=e6RuG4BGY3tVDNbn&amp;start=0"
             />
           </Carousel.Item>
           <Carousel.Item>
