@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../App.css';
+import '../components/about.css';
 import Carousel from 'react-bootstrap/Carousel';
 import CarouselVideos from '../components/CarouselVideos';
 import CarouselImages from '../components/CarouselImages.jsx';
