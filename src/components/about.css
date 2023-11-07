@@ -9,7 +9,7 @@
 
 .about-header {
   font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
+  font-weight: bold; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,18 +64,11 @@ p {
   margin: 20px 0;
 }
 
-.carousel .text {
-  z-index: 1;
-  background-color: black;
+.carousel-text {
+  background-color: rgba(0, 0, 0, 0.7);
   color: white;
   text-align: center;
   padding: 10px;
-  width: 1200px;
-  max-width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 
 .carousel-item {
@@ -104,4 +97,22 @@ p {
 
 .empty-space {
   height: 1000px; 
+}
+
+a:hover,
+button:hover {
+  color: #FFD700;
+  background-color: #007BFF ;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  color: #333;
+  background-image: url("https://media.sketchfab.com/models/3657ed2b9c3340c78941be4e2f5ab496/thumbnails/994f61b53a3e4861b6da076f2daec422/5bd1c27884a64a259aa779a444b97771.jpeg");
+  background-size: cover; 
+  background-repeat: no-repeat; 
 }
