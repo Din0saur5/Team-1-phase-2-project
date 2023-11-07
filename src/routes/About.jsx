@@ -64,11 +64,10 @@ const About = () => {
         </Carousel>
       </div>
       
-      
-      <div className="about-footer">       
+      <div className="about-footer">
         <p>&copy; {new Date().getFullYear()} JDM Games Inc. All rights reserved.</p>
-
       </div>
+  
     </div>
   );
 };
