@@ -1,64 +1,41 @@
-.countdown .content {
-    width: 100%;
+.countdown {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .countdown h2 {
+    font-size: 24px;
+    color: #FFA500; /* Orange color for the title */
+    margin-bottom: 20px;
+  }
+  
+  .countdown .content {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    margin: auto;
-    gap: 21px; 
-    color: white;
-}
-
-.countdown h2 {
-    font-size: 35px; 
-}
-
-.countdown .box {
-    width: calc(100% / 4);
+  }
+  
+  .countdown .box {
+    width: 80px; /* Set a fixed width for all boxes */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 70px; 
-    max-width: 140px; 
-}
-
-.countdown .value {
-    font-size: 21px; 
-    font-weight: 600;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px; 
-    width: 100%;
-    height: 70px; 
-    box-shadow: 0 0 3.5px 0.7px rgba(16, 152, 236, 0.5); 
-}
-
-@media screen and (min-width: 790px) {
-    .countdown .value {
-      font-size: 42px; 
-      height: 140px; 
-    }
+    margin: 0 10px;
+    background: #222; /* Dark background color */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow for depth */
+    color: #FFF; /* White text color */
+  }
   
-    .countdown .box {
-      height: 175px; 
-    }
+  .countdown .value {
+    font-size: 2rem;
+    font-weight: bold; /* Make the value bold */
   }
-
-.countdown .label {
-    font-size: 16px; 
-    font-weight: 600; 
-    letter-spacing: 2px; 
-    margin-top: 10px; 
-    margin-bottom: 10px; 
-    align-self: flex-end;
+  
+  .countdown .label {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px; /* Adjust letter spacing */
+    margin-top: 5px;
   }
-.countdown-container {
-    background-color: rgba(0, 0, 0, 0.4); 
-    color: white;
-    text-align: center;
-    padding: 20px;
-    
-  }
+  
