@@ -10,9 +10,8 @@ body{
   }
 
   .title{
-    position: absolute;
-    left: 50%;
-    margin-left: -26%;
+    position: relative;
+    margin: auto;
     margin-block-start: -11%;
     list-style-type: none;
     
