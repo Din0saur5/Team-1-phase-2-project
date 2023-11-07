@@ -1,0 +1,110 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  .about-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin-top: 1rem;
+    padding: 10px;
+    background: #f5f5f5 url("https://t4.ftcdn.net/jpg/02/43/75/73/360_F_243757367_gBpS6R5c8DB7pL5gw9gi9KXlzFfbdZOA.jpg") center/cover;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: all 0.4s linear;
+  }
+  
+  .about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .about-section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    padding: 20px 0;
+  }
+  
+  .carousel {
+    margin: 20px 0;
+  }
+  
+  .carousel-caption {
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 1200px; 
+    max-width: 100%;
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+  }
+  
+  
+  
+  
+  
+  .carousel-item {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .carousel-videos {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .about-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  .guide-platform {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .guide-top {
+    text-align: right;
+    padding: 20px;
+  }

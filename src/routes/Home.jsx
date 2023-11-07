@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Plx from "react-plx"
 import '../components/home.css'
+import '../components/Button.css'
 const Home = () => {
   return (
     <div >
@@ -71,15 +72,18 @@ const Home = () => {
           position: "fixed",
           left: 0,
           top: "25vw",
-          width: "100%"
+          width: "100%",
+          zIndex: '99999',
         }}
       >
-        <div className='title'>
-        <h1 class="neon" data-text="U"><span class="flicker-slow">Dream</span>Scape <span class="flicker-fast">VR</span> </h1>
-       <div className='btn'><Link  to='/about'>Learn More</Link></div>
-        <Link to='/sign-up'>Register</Link>
-        <Link to='/demo'>Try Demo</Link>
-        </div>
+        <ul className='title'>
+           <li><h1 class="neon" data-text="U"><span class="flicker-slow">Dream</span>Scape <pre style={{fontSize:20}}>{`\n`}</pre><span class="flicker-fast">VR</span></h1></li>
+            <li style={{display:'flex', margin: 'auto', flexDirection: 'row', justifyContent: 'center'}}>
+              <Link to='/about'><div className='btn style-1'>Learn More</div></Link>
+              <Link to='/sign-up'><div className='btn style-3'>Register</div></Link>
+              <Link to='/demo'><div className='btn style-2'>Try Demo</div></Link>
+            </li>
+        </ul>
       </Plx>
       <div
         style={{

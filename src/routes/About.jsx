@@ -1,18 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../App.css';
+import '../components/about.css';
 import Carousel from 'react-bootstrap/Carousel';
 import CarouselVideos from '../components/CarouselVideos';
 import CarouselImages from '../components/CarouselImages.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ColorSchemesExample from '../components/Navbar.jsx'; 
+import NavbarComponent from '../components/Navbar.jsx';
 import Countdown from '../components/countdown.jsx';
+
 
 const About = () => {
   return (
     <div className="about">
-      <ColorSchemesExample />
-       
+      <NavbarComponent /> 
       <div className="about-header">
         <h1>DreamScape: VR Beyond Imagination</h1>
       </div>
@@ -67,11 +67,14 @@ const About = () => {
         </Carousel>
       </div>
       
-      
-      <div className="about-footer">       
+      <div className="about-footer">
         <p>&copy; {new Date().getFullYear()} JDM Games Inc. All rights reserved.</p>
-
       </div>
+  
+      <div className="countdown-container">
+        <Countdown />
+      </div>
+
     </div>
   );
 };

@@ -8,11 +8,11 @@ function NavbarComponent() {
   return (
     <Navbar bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand as={Link} to="/">DreamScape</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/" onClick={()=>{window.scrollTo( {top: document.body.scrollHeight, behavior: 'instant' } ) } } >DreamScape</Navbar.Brand>
         <Nav className="ms-auto">
-          <Nav.Link as={Link} to="/">Home</Nav.Link>
+          <Nav.Link as={Link} to="/" onClick={()=>{window.scrollTo( {top: document.body.scrollHeight, behavior: 'instant' } ) } }  >Home</Nav.Link>
           <Nav.Link as={Link} to="/about">About</Nav.Link>
-          <Nav.Link as={Link} to="/signup">Sign-up</Nav.Link>
+          <Nav.Link as={Link} to="/sign-up">Sign-up</Nav.Link>
         </Nav>
       </Container>
     </Navbar>
