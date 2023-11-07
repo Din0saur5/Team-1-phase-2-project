@@ -1,7 +1,7 @@
 
 @font-face {
   font-family: banuk;
-  src: url('/fonts/banuk.regular.ttf');
+  src: url('public/fonts/banuk.regular.ttf');
 }
 .btn {
    margin: 10px;
@@ -20,18 +20,22 @@
   }
 
   .btn.style-1{
+    font-family: banuk;
+    color:#3d2749;
    border: 1px solid #3d2749;
    background-color: #00adff;
 
   }
 
   .btn.style-1:hover{
-    border: 1px solid #3d2749; 
+    color: #3d2749;
     box-shadow: 0 0 20px black;
+    background-color: #00adff;
     
   }
 
   .btn.style-2{
+    font-family: banuk;
     border: 1px solid #00adff;
     background-color: #65417a;
     color: #00adff;
@@ -39,15 +43,20 @@
  
    .btn.style-2:hover{ 
      box-shadow: 0 0 20px black;
+     background-color: #65417a;
+     color: #00adff;
+     border: 1px solid #00adff;
    }
 
    .btn.style-3{
-    border: 1px solid whitesmoke;
+    font-family: banuk;
+    border: 1px solid #00adff;
     color: #00adff;
  
    }
  
    .btn.style-3:hover{
      border: 1px solid whitesmoke; 
-     box-shadow: 0 0 20px whitesmoke;
+     box-shadow: 0 0 20px #00adff;
+     color: #00adff;
    }
