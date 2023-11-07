@@ -79,9 +79,9 @@ const Home = () => {
         <ul className='title'>
            <li><h1 class="neon" data-text="U"><span class="flicker-slow">Dream</span>Scape <pre style={{fontSize:20}}>{`\n`}</pre><span class="flicker-fast">VR</span></h1></li>
             <li style={{display:'flex', margin: 'auto', flexDirection: 'row', justifyContent: 'center'}}>
-              <Link to='/about'><div className='btn style-1'>Learn More</div></Link>
-              <Link to='/sign-up'><div className='btn style-3'>Register</div></Link>
-              <Link to='/demo'><div className='btn style-2'>Try Demo</div></Link>
+              <Link to='/about'><div onClick={()=>{window.scrollTo( {top: 0, behavior: 'instant' } ) } }  className='btn style-1'>Learn More</div></Link>
+              <Link to='/sign-up'><div onClick={()=>{window.scrollTo( {top: 0, behavior: 'instant' } ) } }  className='btn style-3'>Register</div></Link>
+              <Link to='/demo'><div onClick={()=>{window.scrollTo( {top: 0, behavior: 'instant' } ) } }  className='btn style-2'>Try Demo</div></Link>
             </li>
         </ul>
       </Plx>
