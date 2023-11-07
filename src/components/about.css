@@ -29,6 +29,19 @@
   padding: 20px;
 }
 
+.about-footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  height: 75px;
+  border-top: 1px solid #ccc;
+}
+
 
 header {
   text-align: center;
@@ -96,7 +109,7 @@ p {
 }
 
 .empty-space {
-  height: 1000px; 
+  height: 250px; 
 }
 
 a:hover,
@@ -110,9 +123,9 @@ img {
   max-width: 100%;
 }
 
-body {
-  color: #333;
-  background-image: url("https://media.sketchfab.com/models/3657ed2b9c3340c78941be4e2f5ab496/thumbnails/994f61b53a3e4861b6da076f2daec422/5bd1c27884a64a259aa779a444b97771.jpeg");
-  background-size: cover; 
-  background-repeat: no-repeat; 
+a:hover,
+button:hover {
+  color:#007BFF;
+  background-color:#FFD700;
+  transition: background-color 0.3s, color 0.3s;
 }
