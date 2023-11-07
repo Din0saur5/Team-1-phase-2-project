@@ -14,7 +14,6 @@ function GamerForm() {
       ...user,
       [name]: value,
     });
-  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
