@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const SignUp = () => {
-  //test
+  //test do stuff
   return (
     <div>
       
