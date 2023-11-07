@@ -8,13 +8,15 @@
 }
 
 .about-header {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 200px;
   margin-top: 1rem;
   padding: 10px;
-  background: #f5f5f5 url("https://t4.ftcdn.net/jpg/02/43/75/73/360_F_243757367_gBpS6R5c8DB7pL5gw9gi9KXlzFfbdZOA.jpg") center/cover;
+  background: rgba(245, 245, 245, 0.7) url("https://t4.ftcdn.net/jpg/02/43/75/73/360_F_243757367_gBpS6R5c8DB7pL5gw9gi9KXlzFfbdZOA.jpg") center/cover;
   color: white;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -27,17 +29,6 @@
   padding: 20px;
 }
 
-.about-footer {
-  text-align: center;
-  padding: 10px 0;
-  background-color: #333;
-  color: white;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  z-index: 2;
-  height: 10px;
-}
 
 header {
   text-align: center;
@@ -102,12 +93,13 @@ p {
   padding: 20px;
   background-color: #fff;
   border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .guide-top {
   text-align: right;
   padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .empty-space {
