@@ -7,6 +7,7 @@ import {
   Link,
 } from "react-router-dom";
 import Home from "./routes/Home";
+import Demo from "./routes/Demo";
 import About from "./routes/About";
 import { Outlet } from "react-router-dom";
 import ErrorPage from "./routes/ErrorPage";
