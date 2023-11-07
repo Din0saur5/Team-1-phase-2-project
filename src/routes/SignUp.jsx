@@ -1,17 +1,26 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useEffect, useState  } from 'react';
+import GamerForm from '../components/GamerForm';
+import Navbar from "../components/Navbar.jsx"
 
 const SignUp = () => {
-  //test
+  const [users, setUsers] = useState([]);
+  useEffect(() => {
+    // note to self to remember to fetch initial data from API and update formData
+    fetch("http://localhost:3000/profile")
+      .then((response) => response.json())
+      .then((data) => setUsers(data))
+  }, []); 
+
+
+
   return (
     <div>
-      
-      <p>Hello World</p>
-      <Link to='/'>home</Link>
-      <br/>
-       <Link to='/About'>about</Link>
-       <br/>
-       <Link to='/SignUp'>sign-up</Link>
+      <Navbar/>
+      <h2>Sign Up</h2>
+      <p>Fill in the form below:</p>
+     <GamerForm />
     </div>
   )
 }
