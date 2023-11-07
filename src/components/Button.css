@@ -1,0 +1,53 @@
+
+@font-face {
+  font-family: banuk;
+  src: url('/fonts/banuk.regular.ttf');
+}
+.btn {
+   margin: 10px;
+    padding: 8px 20px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #3d2749;
+    border-radius: 10px;
+    font-family: banuk;
+    letter-spacing: 3px;
+  }
+  .btn:hover{
+    transform: scale(1.1);
+  }
+
+  .btn.style-1{
+   border: 1px solid #3d2749;
+   background-color: #00adff;
+
+  }
+
+  .btn.style-1:hover{
+    border: 1px solid #3d2749; 
+    box-shadow: 0 0 20px black;
+    
+  }
+
+  .btn.style-2{
+    border: 1px solid #00adff;
+    background-color: #65417a;
+    color: #00adff;
+   }
+ 
+   .btn.style-2:hover{ 
+     box-shadow: 0 0 20px black;
+   }
+
+   .btn.style-3{
+    border: 1px solid whitesmoke;
+    color: #00adff;
+ 
+   }
+ 
+   .btn.style-3:hover{
+     border: 1px solid whitesmoke; 
+     box-shadow: 0 0 20px whitesmoke;
+   }
