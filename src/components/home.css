@@ -10,9 +10,12 @@ body{
   }
 
   .title{
-    
     position: absolute;
     left: 50%;
+    margin-left: -26%;
+    margin-block-start: -11%;
+    list-style-type: none;
+    
   }
   @font-face {
     font-family: neon;
@@ -40,13 +43,13 @@ body{
     src: url('/fonts/NEON CLUB MUSIC (Font by Manuel Viergutz)/NEON CLUB MUSIC_medium.otf');
   }
   
+
   .neon{
-    text-align:center;
+   
     font-size: 80pt;
-    margin-top: -10%;
+    margin-top: -3%;
     font-family: 'neon4';
     color: #65417a;
-    transform: translate(-50%, -50%);
     font-weight: 400;
     letter-spacing: 8px;
     text-shadow: 1px 0px 4px #FFD5FF, 2px 0px 4px #FFD5FF, 3px 0px 4px #FFD5FF, 2px 0px 3px #D42CCA, 2px 3px 15px #D42CCA, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA,40px 0vw 200px #D42CCA;
@@ -58,6 +61,7 @@ body{
   }
   
   .flicker-fast{
+    font-size: 80pt;
     font-family: 'neon';
     animation: flicker 1s linear infinite;
   }
@@ -73,7 +77,3 @@ body{
       }
   }
   
- btn{
-
-    border: 5px solid #102331;
- }

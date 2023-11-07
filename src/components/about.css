@@ -59,7 +59,20 @@
   
   .carousel-caption {
     z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 1200px; 
+    max-width: 100%;
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    right: 0;
   }
+  
+  
+  
   
   
   .carousel-item {
