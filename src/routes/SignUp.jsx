@@ -1,17 +1,15 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import Navbar from "../components/Navbar"
+import GamerForm from "../components/GamerForm"
 
 const SignUp = () => {
-  //test
+  
   return (
     <div>
-      
-      <p>Hello World</p>
-      <Link to='/'>home</Link>
-      <br/>
-       <Link to='/About'>about</Link>
-       <br/>
-       <Link to='/SignUp'>sign-up</Link>
+      <Navbar/>
+      <h2>Sign Up</h2>
+      <p>Fill in the form below:</p>
+     <GamerForm/>
     </div>
   )
 }

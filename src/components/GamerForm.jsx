@@ -14,7 +14,8 @@ function GamerForm() {
       ...user,
       [name]: value,
     });
-
+  }
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     // notes to self to handle form submission here or make an API request
