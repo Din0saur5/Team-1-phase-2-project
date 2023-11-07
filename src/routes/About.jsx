@@ -8,7 +8,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ColorSchemesExample from '../components/Navbar.jsx'; 
 
 
-
 const About = () => {
   return (
     <div className="about">
