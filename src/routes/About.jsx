@@ -6,6 +6,7 @@ import CarouselVideos from '../components/CarouselVideos';
 import CarouselImages from '../components/CarouselImages.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarComponent from '../components/Navbar.jsx';
+import Countdown from '../components/countdown.jsx';
 
 
 const About = () => {
@@ -68,6 +69,10 @@ const About = () => {
         <p>&copy; {new Date().getFullYear()} JDM Games Inc. All rights reserved.</p>
       </div>
   
+      <div className="countdown-container">
+        <Countdown />
+      </div>
+
     </div>
   );
 };
