@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { useEffect, useState  } from 'react';
 import GamerForm from '../components/GamerForm';
 import Navbar from "../components/Navbar.jsx"
