@@ -1,17 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../App.css';
+import '../components/about.css';
 import Carousel from 'react-bootstrap/Carousel';
 import CarouselVideos from '../components/CarouselVideos';
 import CarouselImages from '../components/CarouselImages.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ColorSchemesExample from '../components/Navbar.jsx'; 
+import NavbarComponent from '../components/Navbar.jsx';
 
 
 const About = () => {
   return (
     <div className="about">
-      <ColorSchemesExample /> 
+      <NavbarComponent /> 
       <div className="about-header">
         <h1>DreamScape: VR Beyond Imagination</h1>
       </div>
@@ -24,7 +24,7 @@ const About = () => {
       </div>
 
       <div className="guide-video">
-        <Carousel indicators={true}>
+        <Carousel>
           <Carousel.Item>
             <CarouselVideos
               text="Sample VR Gameplay Clip #1"
@@ -38,7 +38,7 @@ const About = () => {
              
             />
           </Carousel.Item>
-          {/* Add more Carousel.Item elements as needed */}
+          
         </Carousel>
       </div>
 
@@ -48,7 +48,7 @@ const About = () => {
       </div>
 
       <div className="guide-screenshot">
-          <Carousel indicators={true}>
+          <Carousel>
             <Carousel.Item>
             <CarouselImages 
               text="Sample VR Gameplay Screenshot #1"
@@ -59,17 +59,15 @@ const About = () => {
             <CarouselImages 
               text="Sample VR Gameplay Screenshot #2"
               imageSrc="https://www.cnet.com/a/img/resize/b92d26f1a9d9ee8847cda813f760fb0c7b233176/hub/2021/07/20/005cf121-512a-42a8-8abb-39e0045e8af0/demeo-realm-of-rat-king-cards-screenshot.jpg?auto=webp&width=1200" />
-          
+
             </Carousel.Item>
-          {/* Add more Carousel.Item elements as needed */}
         </Carousel>
       </div>
       
-      
-      <div className="about-footer">       
+      <div className="about-footer">
         <p>&copy; {new Date().getFullYear()} JDM Games Inc. All rights reserved.</p>
-
       </div>
+  
     </div>
   );
 };
