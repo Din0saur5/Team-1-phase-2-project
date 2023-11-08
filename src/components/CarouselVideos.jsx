@@ -9,7 +9,7 @@ const CarouselVideos = ({ videoSrc, text }) => {
           height="500"
           src={videoSrc}
           title={text}
-          frameborder="0"
+          frameBorder="0"
           allowfullscreen
         ></iframe>
       </div>

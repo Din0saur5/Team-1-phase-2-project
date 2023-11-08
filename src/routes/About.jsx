@@ -26,12 +26,12 @@ const About = () => {
 
       <div className="guide-video">
         <Carousel>
-          <Carousel.Item>
+          <Carousel.Itiem>
             <CarouselVideos
               text="Sample VR Gameplay Clip #1"
               videoSrc="https://www.youtube.com/embed/hEdzv7D4CbQ?si=e6RuG4BGY3tVDNbn&amp;start=720"
             />
-          </Carousel.Item>
+          </Carousel.Itiem>
           <Carousel.Item>
             <CarouselVideos
               text="Sample VR Gameplay Clip #2"
