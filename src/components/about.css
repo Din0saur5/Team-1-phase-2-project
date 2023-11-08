@@ -112,20 +112,6 @@ p {
   height: 250px; 
 }
 
-a:hover,
-button:hover {
-  color: #FFD700;
-  background-color: #007BFF ;
-  transition: background-color 0.3s, color 0.3s;
-}
-
 img {
   max-width: 100%;
-}
-
-a:hover,
-button:hover {
-  color:#007BFF;
-  background-color:#FFD700;
-  transition: background-color 0.3s, color 0.3s;
 }
