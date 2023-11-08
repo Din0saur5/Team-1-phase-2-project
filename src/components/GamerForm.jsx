@@ -15,19 +15,36 @@ function GamerForm() {
       [name]: value,
     });
   }
-  
+
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // notes to self to handle form submission here or make an API request
-    console.log(user);
-  }
+    fetch("http://localhost:3000/profiles", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email: user.email,
+        gamertag: user.gamertag,
+        console: user.console,
+        region: user.region,
+      }),
+    })
+      .then(response => response.json())
+      .then(data => {
+        console.log(data); 
+      })
+      }
+
+
 
   return (
     <form onSubmit={handleSubmit}>
       <div>
         <label>Email:</label>
         <input
-          type="email"
+          type="text"
           name="email"
           value={user.email}
           onChange={handleChange}
@@ -53,7 +70,7 @@ function GamerForm() {
           <option value="MetaQuest">MetaQuest</option>
           <option value="HTCVive">HTC Vive</option>
           <option value="SamsungGearVR">SamsungGear VR</option>
-          <option value="GoogleDaydreamView">Google Daydream View</option>
+          <option value="GoogleDaydrMERGEVRGoggleseamView">Google Daydream View</option>
           <option value="MERGEVRGoggles">MERGE VR Goggles</option>
           <option value="PicoNeo">Pico Neo</option>
           <option value="LenovoMirageSolo">Lenovo Mirage Solo</option>

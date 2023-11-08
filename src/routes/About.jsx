@@ -70,7 +70,7 @@ const About = () => {
         </Carousel>
       </div>
       
-      <div class="empty-space"></div>
+      <div className="empty-space"></div>
       
       <footer className="about-footer">
         <p>&copy; {new Date().getFullYear()} JDM Games Inc. All rights reserved.</p>
