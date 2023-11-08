@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react'
 import "../components/demo.css"
 import { MouseParallaxChild, MouseParallaxContainer } from 'react-parallax-mouse'
-import { useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 
@@ -20,8 +20,8 @@ const Demo = () => {
 
   return (
     <>
-     <video style={{overflowY: 'hidden'}} className="movie" src="public/images/load-screen.mp4" onEnded={(e)=>{handleLoad(e)}} autoPlay muted />
-     <img className={demoPlay? 'hud-overlay':'remove'} src='/images/hud2.png'/>
+     <video className="movie" src="public/images/load-screen.mp4" onEnded={(e)=>{handleLoad(e)}} autoPlay muted />
+      <img className={demoPlay? 'hud-overlay':'remove'} src='/images/hud2.png'/>
      <MouseParallaxContainer
                 
                 className={demoPlay? 'parallax':'remove'}
@@ -43,8 +43,8 @@ const Demo = () => {
                   style={{
                     margin: '-10%',
                     marginTop: '-5%',
-                    cursor: 'none'
-                    
+                    cursor: 'none',
+                    height:'100%',
                   }}
                 >
                   <img src='/images/demo-look-around.jpeg' alt="" />
@@ -52,6 +52,7 @@ const Demo = () => {
               
                 
               </MouseParallaxContainer>
+              <Link to='/' style={{position: 'fixed', bottom: 100, zIndex:9999}}>EXIT</Link>
      
     </>
   )

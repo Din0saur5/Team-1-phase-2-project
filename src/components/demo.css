@@ -19,4 +19,5 @@ img{
 }
 video{
     z-index: 9999;
+    width: -webkit-fill-available;
 }
