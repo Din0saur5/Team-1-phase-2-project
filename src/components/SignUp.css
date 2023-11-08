@@ -8,50 +8,8 @@
     
   }
   
-  /* Styling for the Navbar */
-  .navbar {
-    background-color: transparent;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1;
-  }
+
   
-  .navbar a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    margin-right: 20px;
-    transition: color 0.3s;
-  }
-  
-  .navbar a:hover {
-    color: #f3c623;
-  }
-  
-  /* Styling for the Countdown component */
-  .countdown {
-    font-size: 36px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 20px;
-    color: #fff;
-    animation: pulse 1s infinite alternate;
-  }
-  
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-    100% {
-      transform: scale(1.05);
-    }
-  }
   
   /* Styling for the SearchBar */
   .search-bar {

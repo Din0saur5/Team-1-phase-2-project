@@ -13,13 +13,13 @@ import '../components/about.css';
 const About = () => {
   return (
     <div className="about">
-      <NavbarComponent /> 
+      <NavbarComponent currentPage={"/about"}/> 
       <div className="about-header">
         <h1>DreamScape: VR Beyond Imagination</h1>
       </div>
 
       <div className="countdown-container">
-        <Countdown />
+        <Countdown currentPage={''}/>
       </div>
     
       <div className="guide-intro">

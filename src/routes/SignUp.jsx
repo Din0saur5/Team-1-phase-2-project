@@ -36,8 +36,8 @@ const SignUp = () => {
   }
   return (
     <div className="signup-page"> 
-      <Navbar />
-      <Countdown />
+      <Navbar currentPage= {"/sign-up"}/>
+      <Countdown currentPage= {"sign-up"} />
       <SearchBar handleSearch={handleSearch} className="search-bar" />
       <UserList users={users} />
       <div className="signup-container"> 

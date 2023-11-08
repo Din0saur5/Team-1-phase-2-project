@@ -5,6 +5,7 @@
   flex-direction: column;
   min-height: calc(100vh - 80px);
   position: relative;
+  
 }
 
 .about-header {

@@ -4,12 +4,13 @@
 
   }
   
-  .countdown h2 {
+  div.countdown h2 {
     font-size: 24px;
     color: #FFA500; /* Orange color for the title */
     margin-bottom: 20px;
+    
   }
-  
+
   .countdown .content {
     display: flex;
     justify-content: center;
@@ -42,3 +43,21 @@
     margin-top: 5px;
   }
   
+  /* Styling for the Countdown component */
+  .countdown.sign-up{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+    animation: pulse 1s infinite alternate;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.05);
+    }
+  }
