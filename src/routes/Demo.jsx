@@ -34,12 +34,12 @@ const Demo = () => {
                 }}
                 globalFactorX={0.7}
                 globalFactorY={0.7}
-                resetOnLeave
+                
               >
                 
                 <MouseParallaxChild
                   factorX={0.2}
-                  factorY={0.2}
+                  factorY={0.3}
                   style={{
                     margin: '-10%',
                     marginTop: '-5%',
