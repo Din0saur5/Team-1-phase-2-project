@@ -34,7 +34,7 @@ const About = () => {
           <Carousel.Item>
             <CarouselVideos
               text="Sample VR Gameplay Clip #1"
-              videoSrc="https://www.youtube.com/embed/hEdzv7D4CbQ?si=e6RuG4BGY3tVDNbn&amp;start=720"
+              videoSrc="https://www.youtube.com/embed/hEdzv7D4CbQ?si=e6RuG4BGY3tVDNbn&amp;start=0"
             />
           </Carousel.Item>
           <Carousel.Item>
