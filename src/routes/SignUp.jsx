@@ -3,6 +3,8 @@ import { useEffect, useState  } from 'react';
 import GamerForm from '../components/GamerForm';
 import Navbar from "../components/Navbar.jsx"
 
+
+
 const SignUp = () => {
   const [users, setUsers] = useState([]);
   useEffect(() => {
@@ -13,13 +15,12 @@ const SignUp = () => {
   }, []); 
 
 
-
   return (
     <div>
       <Navbar/>
       <h2>Sign Up</h2>
       <p>Fill in the form below:</p>
-     <GamerForm />
+     <GamerForm/>
     </div>
   )
 }
