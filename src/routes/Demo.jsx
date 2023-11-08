@@ -1,26 +1,30 @@
-import React from 'react'
+import React, { Fragment, useState } from 'react'
 import "../components/demo.css"
 import { MouseParallaxChild, MouseParallaxContainer } from 'react-parallax-mouse'
-
+import { useHistory } from "react-router-dom";
 
 
 
 
 const Demo = () => {
+  const [demoPlay, setDemoPlay] = useState(false)
+
 
    function handleLoad(e){
     console.log(e.target); 
     e.target.classList.add('remove');
-    
+    setDemoPlay(true)
    }
+   //add a return to home page function
+
 
   return (
     <>
-     <video className="movie" src="public/images/load-screen.mp4" onEnded={(e)=>{handleLoad(e)}} autoPlay muted />
-     <img className='hud-overlay' src='/images/hud2.png'/>
+     <video style={{overflowY: 'hidden'}} className="movie" src="public/images/load-screen.mp4" onEnded={(e)=>{handleLoad(e)}} autoPlay muted />
+     <img className={demoPlay? 'hud-overlay':'remove'} src='/images/hud2.png'/>
      <MouseParallaxContainer
                 
-                className="parallax"
+                className={demoPlay? 'parallax':'remove'}
                 containerStyle={{
                   position:'relative',
                   width: "100%",
@@ -38,8 +42,8 @@ const Demo = () => {
                   factorY={0.2}
                   style={{
                     margin: '-10%',
-                    marginTop: '-5%'
-                    
+                    marginTop: '-5%',
+                    cursor: 'none'
                     
                   }}
                 >
