@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import { GiAbstract097 } from "react-icons/gi";
 import { useAudio } from './AudioContext';
 
-import audioButtonImage from '../../public/images/audiobutton.png';
+import AudioButton from './AudioButton'; 
 import '../components/Navbar.css';
 
 function NavbarComponent({ currentPage }) {
@@ -20,9 +20,8 @@ function NavbarComponent({ currentPage }) {
           <Nav.Link eventKey="/" as={Link} to="/" onClick={() => { window.scrollTo({ top: document.body.scrollHeight, behavior: 'instant' }) }}>Home</Nav.Link>
           <Nav.Link eventKey="/about" as={Link} to="/about">About</Nav.Link>
           <Nav.Link eventKey="/sign-up" as={Link} to="/sign-up">Register</Nav.Link>
-          <button className="audio-button" onClick={toggleMusic}>
-            <img src={audioButtonImage} alt="Audio Button" className="audio-button-image" />
-          </button>
+        
+          <AudioButton />
         </Nav>
       </Container>
     </Navbar>
