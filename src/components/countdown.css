@@ -27,7 +27,7 @@
     background: #222; /* Dark background color */
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow for depth */
+    box-shadow: 0 0 15px black; /* Box shadow for depth */
     color: #FFF; /* White text color */
   }
   
@@ -48,9 +48,13 @@
     font-size: 36px;
     font-weight: bold;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 6%;
     color: #fff;
     animation: pulse 1s infinite alternate;
+    
+  }
+  .countdown.sign-up .box{
+    box-shadow: 0 0 20px #FFA500;
   }
   
   @keyframes pulse {

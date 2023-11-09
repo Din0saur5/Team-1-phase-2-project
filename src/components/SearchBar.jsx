@@ -25,6 +25,7 @@ function SearchBar({ handleSearch }) {
   return (
     <form onSubmit={handleSubmit} className="search-bar">
       <input
+      style={{marginRight:'5%', backgroundColor:'#19191a', color:'#FFA500', borderRadius: 0 }}
         type="text"
         placeholder="Search by Gamertag"
         name="gamertag"
@@ -32,6 +33,7 @@ function SearchBar({ handleSearch }) {
         onChange={handleInputChange}
       />
       <input
+      style={{marginRight:'5%',backgroundColor:'#19191a', color:'#FFA500', borderRadius: 0}}
         type="text"
         placeholder="Search by Console"
         name="console"
@@ -39,13 +41,22 @@ function SearchBar({ handleSearch }) {
         onChange={handleInputChange}
       />
       <input
+      style={{marginRight:'5%',backgroundColor:'#19191a', color:'#FFA500',borderRadius: 0}}
         type="text"
         placeholder="Search by Region"
         name="region"
         value={searchCriteria.region}
         onChange={handleInputChange}
       />
-      <button type="submit">Search</button>
+      <style>
+        {`
+          ::placeholder {
+            color: grey;
+        }`
+        }
+
+      </style>
+      <button className='filter-btn' type="submit">Search</button>
     </form>
   );
 }

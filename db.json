@@ -1,24 +1,41 @@
 {
-  "posts": [
+  "profiles":[
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "email": "user1@example.com",
+      "gamertag": "Gamer1",
+      "console": "Xbox Series X",
+      "region": "North America",
+      "id": 1
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "email": "user2@example.com",
+      "gamertag": "Player2",
+      "console": "PlayStation 5",
+      "region": "Europe",
+      "id": 2
+    },
+    {
+      "email": "user3@example.com",
+      "gamertag": "GamingFan3",
+      "console": "Nintendo Switch",
+      "region": "Asia",
+      "id": 3
+    },
+    {
+      "email": "user4@example.com",
+      "gamertag": "ConsoleMaster4",
+      "console": "PC",
+      "region": "South America",
+      "id": 4
+    },
+    {
+      "email": "user5@example.com",
+      "gamertag": "GamerGirl5",
+      "console": "Xbox One",
+      "region": "Africa",
+      "id": 5
     }
-  ],
-  "profiles": {
-    "email": "",
-    "gamertag": "",
-    "console": "",
-    "region": ""
-    
-    
-  }
+  ]
+
+  
 }
