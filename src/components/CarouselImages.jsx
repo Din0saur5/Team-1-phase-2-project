@@ -12,3 +12,4 @@ const CarouselImages = ({ text, imageSrc }) => {
 };
 
 export default CarouselImages;
+

@@ -1,15 +1,18 @@
 import React from 'react';
 import { useAudio } from '../components/AudioContext.jsx';
 
+import noSoundImage from '../../public/images/no-sound.png';
+import soundImage from '../../public/images/sound.png';
+
 const AudioButton = () => {
   const { isMusicPlaying, toggleMusic } = useAudio();
 
   return (
     <button onClick={toggleMusic} className="audio-button">
       {isMusicPlaying ? (
-        <img src="../../public/images/no-sound.png" alt="Pause" />
+        <img src={noSoundImage} alt="Pause" />
       ) : (
-        <img src="../../public/images/sound.png" alt="Play" />
+        <img src={soundImage} alt="Play" />
       )}
     </button>
   );

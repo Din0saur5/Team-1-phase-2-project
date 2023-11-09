@@ -36,21 +36,13 @@ const About = () => {
           <Carousel.Item>
             <CarouselVideos
               text="Sample VR Gameplay Clip #1"
-<<<<<<< HEAD
-              videoSrc="https://www.youtube.com/embed/hEdzv7D4CbQ?si=e6RuG4BGY3tVDNbn&amp;start=0"
-=======
               videoSrc="../../public/videos/VR1.mp4"
->>>>>>> a543f57 (updated vids)
             />
           </Carousel.Item>
           <Carousel.Item>
             <CarouselVideos
               text="Sample VR Gameplay Clip #2"
-<<<<<<< HEAD
-              videoSrc="https://www.youtube.com/embed/OlygkDCGTcM?si=COfodFWrwUIy6E8s&amp;start=0"
-=======
               videoSrc="../../public/videos/VR2.mp4"
->>>>>>> a543f57 (updated vids)
              
             />
           </Carousel.Item>
@@ -82,7 +74,7 @@ const About = () => {
       <div className="empty-space"></div>
 
 <footer className="about-footer">
-  <p>&copy; {new Date().getFullYear()} JDM Games Inc. All rights reserved.</p>
+  <h6>&copy; {new Date().getFullYear()} JDM Games Inc. All rights reserved.</h6>
 </footer>
 </div>
 );

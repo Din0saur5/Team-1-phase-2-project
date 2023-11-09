@@ -1,5 +1,3 @@
-// CarouselVideos.jsx
-
 import React from 'react';
 
 const CarouselVideos = ({ text, videoSrc }) => {
