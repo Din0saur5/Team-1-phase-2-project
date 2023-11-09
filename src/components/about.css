@@ -1,11 +1,9 @@
 /* About */
-
 .about {
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - 80px);
   position: relative;
-  
 }
 
 .about-header {
@@ -22,6 +20,8 @@
   border: 1px solid #ccc;
   border-radius: 10px;
   transition: all 0.4s linear;
+  text-align: center; 
+  align-items: center; 
 }
 
 .about-container {
