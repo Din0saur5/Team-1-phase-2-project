@@ -42,7 +42,7 @@ function GamerForm() {
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <label>Email:</label>
+        <label>Email:&nbsp; </label>
         <input
           type="text"
           name="email"
@@ -50,9 +50,9 @@ function GamerForm() {
           onChange={handleChange}
         />
       </div>
-
+      
       <div>
-        <label>Gamertag:</label>
+        <label>Gamertag:&nbsp; </label>
         <input
           type="text"
           name="gamertag"
@@ -62,7 +62,7 @@ function GamerForm() {
       </div>
 
       <div>
-        <label>Console:</label>
+        <label>Console:&nbsp; </label>
         <select name="console" value={user.console} onChange={handleChange}>
           <option value="">Select a console</option>
           <option value="OculusRift">Oculus Rift</option>
@@ -80,7 +80,7 @@ function GamerForm() {
       </div>
 
       <div>
-        <label>Region:</label>
+        <label>Region:&nbsp;</label>
         <select name="region" value={user.region} onChange={handleChange}>
           <option value="">Select a region</option>
           <option value="Africa">Africa</option>
@@ -91,8 +91,10 @@ function GamerForm() {
           <option value="South America">South America</option>
         </select>
       </div>
+     
 
-      <button type="submit">Submit</button>
+      <button className='form-btn' type="submit">Submit</button>
+
     </form>
   );
 }

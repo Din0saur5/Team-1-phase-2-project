@@ -6,6 +6,7 @@ import Countdown from "../components/countdown.jsx"
 import SearchBar from "../components/SearchBar.jsx"
 import '../components/SignUp.css'
 import UserList from '../components/UserList.jsx';
+import { Col, Container, Row } from 'react-bootstrap';
 
 
 
@@ -30,15 +31,28 @@ const SignUp = () => {
   }
   return (
     <div className="signup-page"> 
-      <Navbar />
-      <Countdown />
-      <SearchBar handleSearch={handleSearch} className="search-bar" />
-      <UserList users={users} />
-      <div className="signup-container"> 
-        <h2>Sign Up</h2>
-        <p>Fill in the form below:</p>
+      <Navbar currentPage= {"/sign-up"} />
+      <Countdown currentPage= {"sign-up"} />
+      <Container>
+      <Row style={{marginTop:'5%', alignItems: 'flex-end'}}>
+      <Col style={{marginLeft:'61%'}}>
+        <div className="signup-container"> 
+        <h2>Register</h2>
+        <p>Get the latest updates, connect with Players!</p>
         <GamerForm users={users} setUsers={setUsers} className="gamer-form" /> 
-      </div>
+      </div></Col>
+        
+        <Col md={{span:6, offset:-1}}><SearchBar handleSearch={handleSearch} className="search-bar" /></Col>
+      </Row>
+      <Row>
+        <Col sm><UserList users={users} /></Col>
+        
+      </Row>
+    </Container>
+
+      
+      
+     
     </div>
   );
 }

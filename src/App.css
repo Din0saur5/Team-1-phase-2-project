@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
-  
+ 
 }
 
 /*scroll bar fun*/
@@ -31,3 +31,30 @@
   background: #555;
 }
 html, body { max-width: 100%; overflow-x: none; overscroll-behavior: none;  }
+
+  /* Styling for the Navbar */
+  .navbar {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 20px;
+    transition: color 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #f3c623;
+  }
+  

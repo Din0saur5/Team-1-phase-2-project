@@ -16,7 +16,7 @@ const getTimeLeft = () => {
   return { days, hours, minutes, seconds };
 };
 
-const Countdown = () => {
+const Countdown = ({currentPage}) => {
   const [timeLeft, setTimeLeft] = useState(() => getTimeLeft());
 
   useEffect(() => {
@@ -29,7 +29,7 @@ const Countdown = () => {
   }, []);
 
   return (
-    <div className="countdown">
+    <div className={`countdown ${currentPage}`}>
       <h2>Launch Day Countdown</h2>
       <div className="content">
         {Object.entries(timeLeft).map((el) => {

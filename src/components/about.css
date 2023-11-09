@@ -1,5 +1,4 @@
 /* About */
-
 .about {
   display: flex;
   flex-direction: column;
@@ -13,7 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 200px; 
   margin-top: 1rem;
   padding: 10px;
   background: rgba(245, 245, 245, 0.7) url("https://t4.ftcdn.net/jpg/02/43/75/73/360_F_243757367_gBpS6R5c8DB7pL5gw9gi9KXlzFfbdZOA.jpg") center/cover;
@@ -21,6 +20,16 @@
   border: 1px solid #ccc;
   border-radius: 10px;
   transition: all 0.4s linear;
+  text-align: center; 
+  position: relative;
+}
+
+.about-header h1 {
+  position: absolute;
+  bottom: 25%; 
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
 }
 
 .about-container {
@@ -71,10 +80,12 @@ p {
   padding: 20px 0;
 }
 
+
 /* Carousel */
 
 .carousel {
-  margin: 20px 0;
+  margin: 20px auto;
+  max-width: 600px; 
 }
 
 .carousel-text {
@@ -87,11 +98,17 @@ p {
 .carousel-item {
   text-align: center;
   padding: 20px;
+  height: 390px;
 }
 
 .carousel-videos {
   font-size: 18px;
   margin-bottom: 10px;
+}
+
+.guide-screenshot .carousel-item img {
+  max-height: 455px;
+  max-width: 100%;
 }
 
 .guide-platform {
