@@ -1,9 +1,7 @@
 import React, { useState, createContext, useContext } from 'react';
 
-// Create an AudioContext
 const AudioContext = createContext();
 
-// Create a hook for using the audio context
 export const useAudio = () => {
   const context = useContext(AudioContext);
   if (!context) {
@@ -12,7 +10,6 @@ export const useAudio = () => {
   return context;
 };
 
-// AudioProvider component
 export const AudioProvider = ({ children }) => {
   const [isMusicPlaying, setMusicPlaying] = useState(false);
 

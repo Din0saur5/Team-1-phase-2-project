@@ -1,18 +1,14 @@
+// CarouselVideos.jsx
+
 import React from 'react';
 
-const CarouselVideos = ({ videoSrc, text }) => {
+const CarouselVideos = ({ text, videoSrc }) => {
   return (
-    <div>
-      <div className="video-container">
-        <iframe
-          width="1200"
-          height="500"
-          src={videoSrc}
-          title={text}
-          frameBorder="0"
-          allowfullscreen
-        ></iframe>
-      </div>
+    <div className="video-container">
+      <video controls>
+        <source src={videoSrc} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <div className="carousel-caption">
         <h3>{text}</h3>
       </div>
