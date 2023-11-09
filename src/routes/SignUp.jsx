@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { useEffect, useState  } from 'react';
 import GamerForm from '../components/GamerForm';
 import Navbar from "../components/Navbar.jsx"
@@ -23,14 +23,8 @@ const SignUp = () => {
   }, [query]); 
 
 
-  function handleSearch(searchCriteria) {
-    fetch(`http://localhost:3000/profiles`, {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(searchCriteria),
-    })
+  function handleSearch() {
+    fetch('http://localhost:3000/profiles')
       .then((response) => response.json())
       .then((data) => setUsers(data));
   }

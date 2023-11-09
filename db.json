@@ -1,24 +1,361 @@
 {
-  "posts": [
+  "profiles": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "email": "player1@example.com",
+      "gamertag": "player1",
+      "console": "Oculus Rift",
+      "region": "North America",
+      "id": 1
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "email": "player2@example.com",
+      "gamertag": "player2",
+      "console": "PlayStation VR",
+      "region": "Europe",
+      "id": 2
+    },
+    {
+      "email": "player3@example.com",
+      "gamertag": "player3",
+      "console": "MetaQuest",
+      "region": "Asia",
+      "id": 3
+    },
+    {
+      "email": "player4@example.com",
+      "gamertag": "player4",
+      "console": "HTC Vive",
+      "region": "Africa",
+      "id": 4
+    },
+    {
+      "email": "player5@example.com",
+      "gamertag": "player5",
+      "console": "SamsungGear VR",
+      "region": "South America",
+      "id": 5
+    },
+    {
+      "email": "player6@example.com",
+      "gamertag": "player6",
+      "console": "Google Daydream View",
+      "region": "North America",
+      "id": 6
+    },
+    {
+      "email": "player7@example.com",
+      "gamertag": "player7",
+      "console": "MERGE VR Goggles",
+      "region": "Europe",
+      "id": 7
+    },
+    {
+      "email": "player8@example.com",
+      "gamertag": "player8",
+      "console": "Pico Neo",
+      "region": "Asia",
+      "id": 8
+    },
+    {
+      "email": "player9@example.com",
+      "gamertag": "player9",
+      "console": "Lenovo Mirage Solo",
+      "region": "Africa",
+      "id": 9
+    },
+    {
+      "email": "player10@example.com",
+      "gamertag": "player10",
+      "console": "Varjo XR-3",
+      "region": "South America",
+      "id": 10
+    },
+    {
+      "email": "player11@example.com",
+      "gamertag": "player11",
+      "console": "XREAL Air AR Glasses",
+      "region": "North America",
+      "id": 11
+    },
+    {
+      "email": "player12@example.com",
+      "gamertag": "player12",
+      "console": "Oculus Rift",
+      "region": "Europe",
+      "id": 12
+    },
+    {
+      "email": "player13@example.com",
+      "gamertag": "player13",
+      "console": "PlayStation VR",
+      "region": "Asia",
+      "id": 13
+    },
+    {
+      "email": "player14@example.com",
+      "gamertag": "player14",
+      "console": "MetaQuest",
+      "region": "Africa",
+      "id": 14
+    },
+    {
+      "email": "player15@example.com",
+      "gamertag": "player15",
+      "console": "HTC Vive",
+      "region": "South America",
+      "id": 15
+    },
+    {
+      "email": "player16@example.com",
+      "gamertag": "player16",
+      "console": "SamsungGear VR",
+      "region": "North America",
+      "id": 16
+    },
+    {
+      "email": "player17@example.com",
+      "gamertag": "player17",
+      "console": "Google Daydream View",
+      "region": "Europe",
+      "id": 17
+    },
+    {
+      "email": "player18@example.com",
+      "gamertag": "player18",
+      "console": "MERGE VR Goggles",
+      "region": "Asia",
+      "id": 18
+    },
+    {
+      "email": "player19@example.com",
+      "gamertag": "player19",
+      "console": "Pico Neo",
+      "region": "Africa",
+      "id": 19
+    },
+    {
+      "email": "player20@example.com",
+      "gamertag": "player20",
+      "console": "Lenovo Mirage Solo",
+      "region": "South America",
+      "id": 20
+    },
+    {
+      "email": "player21@example.com",
+      "gamertag": "player21",
+      "console": "Varjo XR-3",
+      "region": "North America",
+      "id": 21
+    },
+    {
+      "email": "player22@example.com",
+      "gamertag": "player22",
+      "console": "XREAL Air AR Glasses",
+      "region": "Europe",
+      "id": 22
+    },
+    {
+      "email": "player23@example.com",
+      "gamertag": "player23",
+      "console": "Oculus Rift",
+      "region": "Asia",
+      "id": 23
+    },
+    {
+      "email": "player24@example.com",
+      "gamertag": "player24",
+      "console": "PlayStation VR",
+      "region": "Africa",
+      "id": 24
+    },
+    {
+      "email": "player25@example.com",
+      "gamertag": "player25",
+      "console": "MetaQuest",
+      "region": "South America",
+      "id": 25
+    },
+    {
+      "email": "player26@example.com",
+      "gamertag": "player26",
+      "console": "HTC Vive",
+      "region": "North America",
+      "id": 26
+    },
+    {
+      "email": "player27@example.com",
+      "gamertag": "player27",
+      "console": "SamsungGear VR",
+      "region": "Europe",
+      "id": 27
+    },
+    {
+      "email": "player28@example.com",
+      "gamertag": "player28",
+      "console": "Google Daydream View",
+      "region": "Asia",
+      "id": 28
+    },
+    {
+      "email": "player29@example.com",
+      "gamertag": "player29",
+      "console": "MERGE VR Goggles",
+      "region": "Africa",
+      "id": 29
+    },
+    {
+      "email": "player30@example.com",
+      "gamertag": "player30",
+      "console": "Pico Neo",
+      "region": "South America",
+      "id": 30
+    },
+    {
+      "email": "player31@example.com",
+      "gamertag": "player31",
+      "console": "Varjo XR-3",
+      "region": "North America",
+      "id": 31
+    },
+    {
+      "email": "player32@example.com",
+      "gamertag": "player32",
+      "console": "XREAL Air AR Glasses",
+      "region": "Europe",
+      "id": 32
+    },
+    {
+      "email": "player33@example.com",
+      "gamertag": "player33",
+      "console": "Oculus Rift",
+      "region": "Asia",
+      "id": 33
+    },
+    {
+      "email": "player34@example.com",
+      "gamertag": "player34",
+      "console": "PlayStation VR",
+      "region": "Africa",
+      "id": 34
+    },
+    {
+      "email": "player35@example.com",
+      "gamertag": "player35",
+      "console": "MetaQuest",
+      "region": "South America",
+      "id": 35
+    },
+    {
+      "email": "player36@example.com",
+      "gamertag": "player36",
+      "console": "HTC Vive",
+      "region": "North America",
+      "id": 36
+    },
+    {
+      "email": "player37@example.com",
+      "gamertag": "player37",
+      "console": "SamsungGear VR",
+      "region": "Europe",
+      "id": 37
+    },
+    {
+      "email": "player38@example.com",
+      "gamertag": "player38",
+      "console": "Google Daydream View",
+      "region": "Asia",
+      "id": 38
+    },
+    {
+      "email": "player39@example.com",
+      "gamertag": "player39",
+      "console": "MERGE VR Goggles",
+      "region": "Africa",
+      "id": 39
+    },
+    {
+      "email": "player40@example.com",
+      "gamertag": "player40",
+      "console": "Pico Neo",
+      "region": "South America",
+      "id": 40
+    },
+    {
+      "email": "player41@example.com",
+      "gamertag": "player41",
+      "console": "Varjo XR-3",
+      "region": "North America",
+      "id": 41
+    },
+    {
+      "email": "player42@example.com",
+      "gamertag": "player42",
+      "console": "XREAL Air AR Glasses",
+      "region": "Europe",
+      "id": 42
+    },
+    {
+      "email": "player43@example.com",
+      "gamertag": "player43",
+      "console": "Oculus Rift",
+      "region": "Asia",
+      "id": 43
+    },
+    {
+      "email": "player44@example.com",
+      "gamertag": "player44",
+      "console": "PlayStation VR",
+      "region": "Africa",
+      "id": 44
+    },
+    {
+      "email": "player45@example.com",
+      "gamertag": "player45",
+      "console": "MetaQuest",
+      "region": "South America",
+      "id": 45
+    },
+    {
+      "email": "player46@example.com",
+      "gamertag": "player46",
+      "console": "HTC Vive",
+      "region": "North America",
+      "id": 46
+    },
+    {
+      "email": "player47@example.com",
+      "gamertag": "player47",
+      "console": "SamsungGear VR",
+      "region": "Europe",
+      "id": 47
+    },
+    {
+      "email": "player48@example.com",
+      "gamertag": "player48",
+      "console": "Google Daydream View",
+      "region": "Asia",
+      "id": 48
+    },
+    {
+      "email": "player49@example.com",
+      "gamertag": "player49",
+      "console": "MERGE VR Goggles",
+      "region": "Africa",
+      "id": 49
+    },
+    {
+      "email": "player50@example.com",
+      "gamertag": "player50",
+      "console": "Pico Neo",
+      "region": "South America",
+      "id": 50
+    },
+    {
+      "email": "",
+      "gamertag": "",
+      "console": "",
+      "region": "Africa",
+      "id": 51
     }
-  ],
-  "profiles": {
-    "email": "",
-    "gamertag": "",
-    "console": "",
-    "region": ""
-    
-    
-  }
+  ]
 }
