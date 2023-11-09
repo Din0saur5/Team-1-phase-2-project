@@ -9,11 +9,11 @@ import NavbarComponent from '../components/Navbar.jsx';
 import Countdown from '../components/countdown.jsx';
 import '../components/about.css';
 
-
 const About = () => {
   return (
     <div className="about">
       <NavbarComponent currentPage={"/about"}/> 
+      
       <div className="about-header">
         <h1>DreamScape: VR Beyond Imagination</h1>
       </div>
@@ -47,7 +47,6 @@ const About = () => {
           
         </Carousel>
       </div>
-
 
       <div className="guide-platform">
         <p>"DreamScape" is a journey of limitless self-discovery, cooperation, and immersive exploration, where your imagination knows no bounds. Craft your dream world, connect with others in a bustling virtual metropolis, and dive into adventures of wonder and mystery. In this boundless realm of dreams, what will you create, and where will your journey take you?.</p>
