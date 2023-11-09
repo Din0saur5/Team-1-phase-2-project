@@ -14,21 +14,52 @@ import { Col, Container, Row } from 'react-bootstrap';
 
 const SignUp = () => {
   const [users, setUsers] = useState([]);
-  const [query, setQuery] = useState("");
- 
-  useEffect(() => {
+  const [searchQuery, setSearchQuery] = useState({
+    gamertag: '',
+    console: '',
+    region: '',
+  });
   
-    fetch(`http://localhost:3000/profiles?q=${query}`)
-      .then((response) => response.json())
-      .then((data) => setUsers(data))
-  }, [query]); 
+  useEffect(()=>{
+  
+    fetch(`http://localhost:3000/profiles`)
+      .then((resp) => resp.json())
+      .then((data) =>{ setUsers(data)
+        console.log(users)
+        })
+      }, []); 
 
-
-  function handleSearch() {
-    fetch('http://localhost:3000/profiles')
-      .then((response) => response.json())
-      .then((data) => setUsers(data));
+const handleSearch = (search) => {
+  setSearchQuery(search)
+  console.log(searchQuery)
+  
+  
   }
+
+
+ console.log(users) 
+
+let regionFilter
+let consoleFilter
+let nameFilter
+  if(searchQuery.region !== ""){
+    regionFilter = users.filter(user=>user.region === searchQuery.region) 
+    console.log(regionFilter)
+  } else{regionFilter= users}
+  if(searchQuery.console !== ''){ 
+    consoleFilter = regionFilter.filter(user=>user.console === searchQuery.console)
+    console.log(consoleFilter)
+  } else{consoleFilter=regionFilter}
+  if(searchQuery.gamertag !== ''){ //want it to be case Sensitive
+    nameFilter = consoleFilter.filter(user=>user.gamertag.includes(searchQuery.gamertag)) 
+   
+  }else{nameFilter=consoleFilter}
+
+  let filteredUsers = nameFilter
+
+
+
+
   return (
     <div className="signup-page"> 
       <Navbar currentPage= {"/sign-up"} />
@@ -45,7 +76,7 @@ const SignUp = () => {
         <Col md={{span:6, offset:-1}}><SearchBar handleSearch={handleSearch} className="search-bar" /></Col>
       </Row>
       <Row>
-        <Col sm><UserList users={users} /></Col>
+        <Col sm><UserList users={filteredUsers} /></Col>
         
       </Row>
     </Container>
