@@ -53,6 +53,7 @@
   align-items: center; 
 }
 
+
 .about-footer h6 {
   margin: 0;
 }
@@ -80,7 +81,8 @@ p {
   padding: 20px;
   background-color: #fff;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);}
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
 
 .about-section,
 .carousel,
@@ -124,7 +126,7 @@ img {
 }
 
 .video-container {
-  max-width: 100%;
+  max-width: 50%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
