@@ -20,9 +20,7 @@ const AppLayout = () => {
   return (
     <AudioProvider>
       <>
-        {/* if we add a header*/}
         <Outlet />
-        {/* if we add a footer */}
       </>
     </AudioProvider>
   );

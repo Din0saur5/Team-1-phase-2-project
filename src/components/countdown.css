@@ -39,11 +39,10 @@
   .countdown .label {
     text-transform: uppercase;
     font-size: 14px;
-    letter-spacing: 1px; /* Adjust letter spacing */
+    letter-spacing: 1px; 
     margin-top: 5px;
   }
   
-  /* Styling for the Countdown component */
   .countdown.sign-up{
     font-size: 36px;
     font-weight: bold;
