@@ -11,47 +11,46 @@ import Demo from "./routes/Demo";
 import About from "./routes/About";
 import { Outlet } from "react-router-dom";
 import ErrorPage from "./routes/ErrorPage";
-import "./App.css"
+import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SignUp from "./routes/SignUp";
-const AppLayout = () =>{
+import { AudioProvider } from './components/AudioContext';
 
-  return(
+const AppLayout = () => {
+  return (
+    <AudioProvider>
       <>
-    {/* if we add a header*/}
-    <Outlet/>
-    {/* if we add a footer */}
-    </>
-  )
+        {/* if we add a header*/}
+        <Outlet />
+        {/* if we add a footer */}
+      </>
+    </AudioProvider>
+  );
 }
-
 
 const router = createBrowserRouter([
   {
-    element: <AppLayout/>,
-   errorElement: <ErrorPage/>,
-    children:[
+    element: <AppLayout />,
+    errorElement: <ErrorPage />,
+    children: [
       {
         path: "/",
-        element: <Home/>
+        element: <Home />,
       },
       {
         path: "about",
-        element: <About/>,
+        element: <About />,
       },
       {
         path: "sign-up",
-        element: <SignUp/>,
+        element: <SignUp />,
       },
       {
         path: "demo",
-        element: <Demo/>,
-      }
-    ]
-  }
-  
-  
- 
+        element: <Demo />,
+      },
+    ],
+  },
 ]);
 
 createRoot(document.getElementById("root")).render(

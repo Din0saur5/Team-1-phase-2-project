@@ -8,12 +8,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarComponent from '../components/Navbar.jsx';
 import Countdown from '../components/countdown.jsx';
 import '../components/about.css';
+import { useAudio } from '../components/AudioContext.jsx'; 
 
 const About = () => {
+  const { toggleMusic } = useAudio();
+
   return (
     <div className="about">
-      <NavbarComponent currentPage={"/about"}/> 
-      
+      <NavbarComponent currentPage={"/about"} />
       <div className="about-header">
         <h1>DreamScape: VR Beyond Imagination</h1>
       </div>
@@ -70,12 +72,12 @@ const About = () => {
       </div>
       
       <div className="empty-space"></div>
-      
-      <footer className="about-footer">
-        <p>&copy; {new Date().getFullYear()} JDM Games Inc. All rights reserved.</p>
-      </footer>
-    </div>
-  );
+
+<footer className="about-footer">
+  <p>&copy; {new Date().getFullYear()} JDM Games Inc. All rights reserved.</p>
+</footer>
+</div>
+);
 };
 
 export default About;
