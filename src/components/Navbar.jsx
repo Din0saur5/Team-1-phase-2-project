@@ -5,7 +5,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 import { GiAbstract097 } from "react-icons/gi";
 import { useAudio } from './AudioContext';
-
 import AudioButton from './AudioButton'; 
 import '../components/Navbar.css';
 

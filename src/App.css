@@ -57,8 +57,3 @@ html, body { max-width: 100%; overflow-x: none; overscroll-behavior: none;  }
   .navbar a:hover {
     color: #f3c623;
   }
-  
-  .video-container {
-    max-width: 800px; /* Adjust the max-width to your desired value */
-    margin: 0 auto; /* This will center the container */
-  }
