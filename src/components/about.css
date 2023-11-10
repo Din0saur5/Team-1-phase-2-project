@@ -76,7 +76,7 @@ h2 {
   text-align: center;
 }
 
-p {
+.about-section,.guide-platform {
   margin: 20px;
   padding: 20px;
   background-color: #fff;
@@ -99,11 +99,30 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
-.guide-screenshot .carousel-item img {
-  max-width: 100%;
+.carousel-slide {
+  max-width: 50%;
   max-height: 100%;
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.guide-screenshot {
+  max-width: 50%;
+  max-height: 100%;
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .guide-screenshot .carousel-item img {
