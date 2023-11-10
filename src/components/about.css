@@ -4,6 +4,7 @@
   flex-direction: column;
   min-height: calc(100vh - 80px);
   position: relative;
+  background: linear-gradient(to top, #cd89f2,#67c9f7 );
 }
 
 .about-header {
@@ -79,9 +80,11 @@ h2 {
 .about-section,.guide-platform {
   margin: 20px;
   padding: 20px;
+  padding-left:5%;
+  padding-right:5%;
   background-color: #fff;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .about-section,
@@ -137,7 +140,7 @@ h2 {
 }
 
 .empty-space {
-  height: 250px; 
+  height: 100px; 
 }
 
 img {
