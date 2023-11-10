@@ -13,7 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px; 
+  height: 250px; 
   margin-top: 1rem;
   padding: 10px;
   background: rgba(245, 245, 245, 0.7) url("https://t4.ftcdn.net/jpg/02/43/75/73/360_F_243757367_gBpS6R5c8DB7pL5gw9gi9KXlzFfbdZOA.jpg") center/cover;
@@ -23,15 +23,24 @@
   transition: all 0.4s linear;
   text-align: center; 
   position: relative;
+  width: 100%;
 }
 
 .about-header h1 {
   position: absolute;
-  bottom: 25%; 
+  bottom: 5%; 
   left: 50%;
   transform: translateX(-50%);
   margin: 0;
-}
+  margin-top: -3%;
+    font-family: 'neon4';
+    font-size: 50px;
+    color: #b667e3;
+    font-weight: 300;
+    letter-spacing: 8px;
+    text-shadow: 1px 0px 4px #FFD5FF, 2px 0px 4px #FFD5FF, 3px 0px 4px #FFD5FF, 2px 0px 3px #D42CCA, 2px 3px 15px #D42CCA, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA,40px 0vw 200px #f532e8;
+    animation: flicker 3s linear infinite;
+  }
 
 .about-container {
   max-width: 800px;
@@ -155,3 +164,13 @@ img {
   z-index: 1;
 }
 
+@keyframes flicker {
+  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+     
+  opacity: .99;
+      
+  }
+  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+      opacity: 0.4;
+  }
+}

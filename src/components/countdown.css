@@ -5,10 +5,16 @@
   }
   
   div.countdown h2 {
-    font-size: 24px;
-    color: #FFA500; /* Orange color for the title */
+    margin-top: -3%;
+    font-family: 'neon4';
+    font-size: 30px;
+    color: #65417a;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-shadow: 1px 0px 4px #FFD5FF, 2px 0px 4px #FFD5FF, 3px 0px 4px #FFD5FF, 2px 0px 3px #D42CCA, 2px 3px 15px #D42CCA, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA,40px 0vw 200px #D42CCA;
     margin-bottom: 20px;
-    
+    padding-top:80px;
+    animation: flicker 1s linear infinite;
   }
 
   .countdown .content {
@@ -19,21 +25,21 @@
   
   
   .countdown .box {
-    width: 80px; /* Set a fixed width for all boxes */
+    width: 80px; 
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 10px;
-    background: #222; /* Dark background color */
+    background: #222; 
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 0 15px black; /* Box shadow for depth */
-    color: #FFF; /* White text color */
+    box-shadow: 0 0 15px black; 
+    color: #FFF; 
   }
   
   .countdown .value {
     font-size: 2rem;
-    font-weight: bold; /* Make the value bold */
+    font-weight: bold; 
   }
   
   .countdown .label {
@@ -64,3 +70,14 @@
       transform: scale(1.05);
     }
   }
+
+  @keyframes flicker {
+    0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+       
+    opacity: .99;
+        
+    }
+    20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+        opacity: 0.4;
+    }
+}
