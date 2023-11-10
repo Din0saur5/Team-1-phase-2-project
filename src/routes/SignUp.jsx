@@ -19,25 +19,63 @@ const SignUp = () => {
     console: '',
     region: '',
   });
-  
+
+//intial fetch
   useEffect(()=>{
   
     fetch(`http://localhost:3000/profiles`)
       .then((resp) => resp.json())
-      .then((data) =>{ setUsers(data)
+      .then((data) =>{setUsers(data)
         console.log(users)
         })
       }, []); 
 
+//set searchQuery from form
 const handleSearch = (search) => {
   setSearchQuery(search)
   console.log(searchQuery)
-  
-  
   }
 
+//New form submit
+  const handleSubmitNew = (user) => {
+    fetch("http://localhost:3000/profiles", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(
+      //   {
+      //   email: user.email,
+      //   gamertag: user.gamertag,
+      //   console: user.console,
+      //   region: user.region,
+      // }
+      user
+      )
+    })
+      .then(response => response.json())
+      .then(data => {
+        setUsers([...users, data])
+      })
+      }
 
- console.log(users) 
+ const handleRemove = (userRM) => {
+  fetch(`http://localhost:3000/profiles/${userRM.id}`, {
+    method: "DELETE"
+ })
+ .then(resp=>resp.json())
+ .then(()=>{
+  
+
+  let newlist = users.filter((user)=> user !== userRM)
+    setUsers(newlist)
+ })
+ }
+
+
+
+
+
 
 let regionFilter
 let consoleFilter
@@ -63,20 +101,24 @@ let nameFilter
   return (
     <div className="signup-page"> 
       <Navbar currentPage= {"/sign-up"} />
-      <Countdown currentPage= {"sign-up"} />
       <Container>
-      <Row style={{marginTop:'5%', alignItems: 'flex-end'}}>
-      <Col style={{marginLeft:'61%'}}>
+        <Row ><br/></Row>
+        <Row>
+      <br/>
+      </Row>
+      <Row style={{marginTop:'5%'}}>
+        <Col><Countdown currentPage= {"sign-up"} /></Col>
+      <Col>
         <div className="signup-container"> 
         <h2>Register</h2>
         <p>Get the latest updates, connect with Players!</p>
-        <GamerForm users={users} setUsers={setUsers} className="gamer-form" /> 
+        <GamerForm handleSubmitNew={handleSubmitNew}  /> 
       </div></Col>
         
         <Col md={{span:6, offset:-1}}><SearchBar handleSearch={handleSearch} className="search-bar" /></Col>
       </Row>
       <Row>
-        <Col sm><UserList users={filteredUsers} /></Col>
+        <Col sm><UserList users={filteredUsers} handleRemove={handleRemove} /></Col>
         
       </Row>
     </Container>

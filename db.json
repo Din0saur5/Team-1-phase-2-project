@@ -351,9 +351,9 @@
       "id": 50
     },
     {
-      "email": "",
-      "gamertag": "",
-      "console": "",
+      "email": "dummy",
+      "gamertag": "dummy",
+      "console": "OculusRift",
       "region": "Africa",
       "id": 51
     },
@@ -363,6 +363,13 @@
       "console": "",
       "region": "",
       "id": 52
+    },
+    {
+      "email": "",
+      "gamertag": "",
+      "console": "",
+      "region": "",
+      "id": 53
     }
   ]
 }
