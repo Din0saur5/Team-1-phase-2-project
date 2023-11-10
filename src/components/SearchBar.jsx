@@ -33,14 +33,14 @@ function SearchBar({handleSearch}) {
   return (
     <form onSubmit={handleSubmit} className="search-bar" value = {controlQuery}>
       <input
-      style={{marginRight:'5%', backgroundColor:'#19191a', color:'#FFA500', borderRadius: 0 }}
+      style={{marginRight:'2%', backgroundColor:'#19191a', color:'#FFA500', borderRadius: 0 }}
         type="text"
         placeholder="Search by Gamertag"
         name="gamertag"
         value={controlQuery.gamertag}
         onChange={handleInputChange}
       />
-       <select style={{marginRight:'5%',backgroundColor:'#19191a', color:'#FFA500',borderRadius: 0}} name="console" value={controlQuery.console} onChange={handleInputChange}>
+       <select style={{marginRight:'2%',backgroundColor:'#19191a', color:'#FFA500',borderRadius: 0}} name="console" value={controlQuery.console} onChange={handleInputChange}>
           <option value="">Select a console</option>
           <option value="Oculus Rift">Oculus Rift</option>
           <option value="PlayStation VR">PlayStation VR</option>
@@ -55,7 +55,7 @@ function SearchBar({handleSearch}) {
           <option value="XREAL Air AR Glasses">XREAL Air AR Glasses</option>
         </select>
     
-      <select style={{marginRight:'5%',backgroundColor:'#19191a', color:'#FFA500',borderRadius: 0}} name="region" value={controlQuery.region} onChange={handleInputChange}>
+      <select style={{marginRight:'2%',backgroundColor:'#19191a', color:'#FFA500',borderRadius: 0}} name="region" value={controlQuery.region} onChange={handleInputChange}>
           <option value="">Select a region</option>
           <option value="Africa">Africa</option>
           <option value="Asia">Asia</option>
