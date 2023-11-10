@@ -1,6 +1,7 @@
 import { useState } from 'react';
+import UserList from './UserList';
 
-function GamerForm() {
+function GamerForm({handleSubmitNew}) {
   const [user, setUser] = useState({
     email: '',
     gamertag: '',
@@ -15,33 +16,27 @@ function GamerForm() {
       [name]: value,
     });
   }
+function handleSubmit(e){
+  e.preventDefault()
+  handleSubmitNew(user)
+  e.target.reset()
+  setUser({
+    email: '',
+    gamertag: '',
+    console: '',
+    region: '',
+  }
+
+  )
+}
 
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    fetch("http://localhost:3000/profiles", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        email: user.email,
-        gamertag: user.gamertag,
-        console: user.console,
-        region: user.region,
-      }),
-    })
-      .then(response => response.json())
-      .then(data => {
-        console.log(data); 
-      })
-      }
 
 
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
+    <form className='gamer-form' onSubmit={(e)=>handleSubmit(e, user)}>
+      
         <label>Email:&nbsp; </label>
         <input
           type="text"
@@ -49,9 +44,9 @@ function GamerForm() {
           value={user.email}
           onChange={handleChange}
         />
-      </div>
+     
       
-      <div>
+      <br/>
         <label>Gamertag:&nbsp; </label>
         <input
           type="text"
@@ -59,9 +54,9 @@ function GamerForm() {
           value={user.gamertag}
           onChange={handleChange}
         />
-      </div>
-
-      <div>
+     
+     <br/>
+     
         <label>Console:&nbsp; </label>
         <select name="console" value={user.console} onChange={handleChange}>
           <option value="">Select a console</option>
@@ -77,9 +72,9 @@ function GamerForm() {
           <option value="VarjoXR3">Varjo XR-3</option>
           <option value="XREALAirARGlasses">XREAL Air AR Glasses</option>
         </select>
-      </div>
+    
 
-      <div>
+        <br/>
         <label>Region:&nbsp;</label>
         <select name="region" value={user.region} onChange={handleChange}>
           <option value="">Select a region</option>
@@ -90,8 +85,8 @@ function GamerForm() {
           <option value="Oceania">Oceania</option>
           <option value="South America">South America</option>
         </select>
-      </div>
-     
+      
+        <br/>
 
       <button className='form-btn' type="submit">Submit</button>
 
