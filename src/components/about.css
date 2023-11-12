@@ -93,8 +93,12 @@ h3 {
     text-align: center;
 }
 
+p {
+  font-size: 20px;
+}
+
 .about-section,.guide-platform, .about-info-1, .about-info-2 {
-  margin: 20px;
+  margin: 50px;
   padding: 20px;
   padding-left:5%;
   padding-right:5%;
