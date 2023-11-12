@@ -6,3 +6,10 @@
   cursor: pointer;
   height: 25px;
 }
+
+.brand{
+  font-family: banuk;
+  letter-spacing: 10px;
+  font-size: 22pt;
+  
+}

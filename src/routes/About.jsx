@@ -6,7 +6,7 @@ import CarouselVideos from '../components/CarouselVideos';
 import CarouselImages from '../components/CarouselImages.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarComponent from '../components/Navbar.jsx';
-import Countdown from '../components/countdown.jsx';
+import Countdown from '../components/Countdown.jsx';
 import '../components/about.css';
 import { useAudio } from '../components/AudioContext.jsx'; 
 
