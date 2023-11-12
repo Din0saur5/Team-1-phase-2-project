@@ -5,7 +5,7 @@ import '../components/home.css'
 import '../components/Button.css'
 const Home = () => {
   return (
-    <div >
+    <div className='home-screen' >
       
        <Plx
         parallaxData={[
