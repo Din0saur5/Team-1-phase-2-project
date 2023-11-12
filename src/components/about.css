@@ -86,7 +86,14 @@ h2 {
   text-align: center;
 }
 
-.about-section,.guide-platform {
+h3 {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.about-section,.guide-platform, .about-info-1, .about-info-2 {
   margin: 20px;
   padding: 20px;
   padding-left:5%;
