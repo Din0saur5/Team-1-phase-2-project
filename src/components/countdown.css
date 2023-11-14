@@ -8,13 +8,13 @@
     margin-top: -3%;
     font-family: 'neon4';
     font-size: 30px;
-    color: #65417a;
+    color: #FFA500;
     font-weight: 400;
-    letter-spacing: 1px;
+    
     text-shadow: 1px 0px 4px #FFD5FF, 2px 0px 4px #FFD5FF, 3px 0px 4px #FFD5FF, 2px 0px 3px #D42CCA, 2px 3px 15px #D42CCA, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA,40px 0vw 200px #D42CCA;
     margin-bottom: 20px;
     padding-top:80px;
-    animation: flicker 1s linear infinite;
+    
   }
 
   .countdown .content {
@@ -60,6 +60,9 @@
   }
   .countdown.sign-up .box{
     box-shadow: 0 0 20px #FFA500;
+  }
+  .countdown.sign-up h2{
+    animation: flicker 1s linear infinite;
   }
   
   @keyframes pulse {
