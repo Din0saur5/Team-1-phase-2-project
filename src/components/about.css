@@ -68,7 +68,7 @@
   margin: 0;
 }
 
-
+/* 
 header {
   text-align: center;
 }
@@ -100,12 +100,10 @@ p {
 .about-section,.guide-platform, .about-info-1, .about-info-2 {
   margin: 50px;
   padding: 20px;
-  padding-left:5%;
-  padding-right:5%;
-  background-color: rgba(245, 245, 245, 0.6);
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+} */
 
 .about-section,
 .carousel,

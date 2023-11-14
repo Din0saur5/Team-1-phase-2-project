@@ -1,0 +1,356 @@
+.about-bg{
+    
+    background-image: url('public/images/about-bg.jpg');
+    background-size: cover;
+    position: fixed;
+    width: 100vw;
+    height: -webkit-fill-available;
+}
+
+.beam-container{
+    position: relative;
+    z-index: 900;
+    height: 98dvh;
+    width: 30%;
+    margin-inline-start: 34%;
+    perspective: 2000px;
+    perspective-origin: bottom; 
+    	
+}
+
+.beam{
+    height:98dvh;
+    background: rgb(16,25,80);
+    background: linear-gradient(90deg, rgba(16,25,80,1) 35%, rgba(239,0,255,1) 79%, rgba(16,25,80,1) 92%);
+    opacity: 60%;
+    box-shadow: 0 0 10px 10px #3d2749;
+    border: 1px solid #3d2749;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 38%;
+    z-index: 1;
+    width:100%;
+}
+
+.countdown-sand{
+    animation: rotateY-anim 10s linear infinite;
+    margin-block-start: 60%;
+    
+   box-shadow: none !important;
+   transform: rotateX(-10deg) ;
+}
+
+
+@keyframes rotateY-anim {
+	0% {
+		transform: rotateY(0deg) rotateX(-10deg);
+        
+	}
+     25%{
+        transform: rotateY(90deg) rotateX(-10deg) ;
+    }
+    50%{
+        transform: rotateY(180deg) rotateX(-10deg);
+    }
+    
+    75%{
+        transform: rotateY(270deg) rotateX(-10deg); 
+    } 
+    100%{
+        transform: rotateY(360deg) rotateX(-10deg); 
+    }
+
+}
+
+.hidden{
+    display:none;
+}
+
+.ab-text-container{
+    position: absolute;
+    z-index: 950;
+    height: 300px;
+    width:40%;
+    margin-left: 30%;
+    margin-block-start: -48%;
+    
+    color:#fff;
+    font-size: smaller;
+}
+.ab-text-container img{
+    margin-inline-start: -10%;
+    margin-block-start: -5%;
+}
+
+h1.info-block{
+    font-family: neon3;
+    position:absolute;
+    margin-block-start: -42%;
+    margin-inline-start: 15%;
+    opacity: 80%;
+    color:#00adff;
+    font-size: 18pt;
+}
+div.info-block{
+   
+    position:absolute;
+    margin-block-start: -38%;
+    margin-inline-start: 5%;
+    opacity: 80%;
+    color:#00adff;
+    font-size: 14pt;
+    width: 90%;
+    line-height: 1.8;
+   
+}
+
+.line__0,
+.line__1,
+.line__2,
+.line__3,
+.line__4,
+.line__5 {
+  white-space: nowrap; /* keep text in one line */
+  overflow: hidden; /* hide text behind the cursor */
+  
+  font-family: monospace;
+  
+}
+
+.line__0 {
+  border-right: 2px solid #071a20;
+
+  /* define animation types for text + cursor */
+  animation: animated-text 2s steps(30, end) 1s 1 normal both;
+}
+
+.line__1 {
+  border-right: 2px solid #071a20;
+
+  /* define animation types for text + cursor */
+  animation: animated-text 2s steps(30, end) 1s 1 normal both;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+.line__2 {
+    border-right: 2px solid #071a20;
+  
+    /* define animation types for text + cursor */
+    animation: animated-text 2500ms steps(30, end) 1s 1 normal both;
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+  }
+  .line__3 {
+    border-right: 2px solid #071a20;
+  
+    /* define animation types for text + cursor */
+    animation: animated-text 2500ms steps(30, end) 2500ms 1 normal both;
+    -webkit-animation-delay: 7s;
+    animation-delay: 7s;
+  }
+  .line__4 {
+    border-right: 2px solid #071a20;
+  
+    /* define animation types for text + cursor */
+    animation: animated-text 2500ms steps(30, end) 1s normal both;
+    -webkit-animation-delay: 9s;
+    animation-delay: 9s;
+  }
+  .line__5 {
+    border-right: 2px solid #071a20;
+  
+    /* define animation types for text + cursor */
+    animation: animated-text 2500ms steps(30, end) 1s 1 normal both ;
+    -webkit-animation-delay: 15s;
+    animation-delay: 15s;
+  }
+
+
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 45rem;
+  }
+}
+
+
+
+
+.pop-up-container{
+    position: absolute;
+    top:0px;
+    height: 100vh;
+    display: flex;
+    width: 33%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.B{
+    right:0px;
+}
+
+.infoball-container:hover{
+    transform:scale(1.5);
+}
+
+.infoball-container img{
+   cursor: pointer;
+}
+.infoball-container img:hover{
+
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+
+
+
+.about-title{
+    position: absolute;
+    text-decoration: underline;
+    left:29%;
+    color: black;
+
+    
+    text-shadow: black 1px 0 10px;
+    text-align: center;
+    z-index: 10;
+    
+}
+.carousel-control-prev{
+margin-inline-start: -73px;
+}
+.carousel-control-next{
+    margin-inline-end: -59px;
+}
+.screen-hide{
+    z-index: 70;
+    position: absolute;
+    top: 37.5%;
+    left: 26.5%;
+    width: 907px;
+    height:auto;
+}
+
+.screen-deep{
+    z-index: -1;
+    transform: scale(1.15, 1.23) perspective(400px) rotateX(3deg);
+
+    -webkit-mask-image: url('/images/bg-screen.png');
+    width:39.3%;
+    height: 333px;
+    background: rgb(62,62,66);
+background: radial-gradient(circle, rgba(62,62,66,0.9164040616246498) 0%, rgba(30,30,30,1) 71%);
+position: absolute;
+bottom: 22%;
+right: 30.5%;
+}
+
+.video-container {
+    max-width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+  }
+ 
+.carousel-inner {
+    position: relative;
+    width: 87% !important;
+    overflow: hidden;
+    margin: auto;
+}
+.movies-btn{
+    position: absolute;
+    bottom: 10%;
+    right: 28%;
+    z-index: 69;
+    width: 100px ;
+}
+.movie-container{
+    transform: scale(1.17, 1) perspective(400px) rotateX(3deg);
+    
+    position: absolute;
+    width:800px;
+    
+    z-index: 69;
+   
+    bottom: 18%;
+    right: 30.8%;
+    
+    animation-fill-mode: forwards;
+    animation-name: movieFade;
+    animation-duration: 4000ms;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+
+}
+
+.carousel-ab{
+    width: 850px;
+    
+}
+.ab-vids{
+    
+    height:415px;
+    width: 1300px;
+    -webkit-mask-image: url('/images/bg-screen.png')
+}
+
+
+.beam-me-up{
+    animation-fill-mode: forwards;
+    animation-name: beamUp;
+    animation-duration: 3000ms;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+.beam-me-down{
+    animation-name: beamDown;
+    animation-duration: 3000ms;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+@keyframes beamUp {
+    from {
+        transform: translate(0);
+        
+    }
+    to {
+        transform: translate(0px, -120%);
+        
+
+    }
+    
+}
+@keyframes beamDown {
+    from {
+        transform: translate(0px, -120%);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+
+@keyframes movieFade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opactiy: 100%
+    }
+}

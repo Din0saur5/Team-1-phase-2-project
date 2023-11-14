@@ -16,6 +16,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import SignUp from "./routes/SignUp";
 import { AudioProvider } from './components/AudioContext';
 
+
 const AppLayout = () => {
   return (
     <AudioProvider>
@@ -46,7 +47,7 @@ const router = createBrowserRouter([
       {
         path: "demo",
         element: <Demo />,
-      },
+      }
     ],
   },
 ]);

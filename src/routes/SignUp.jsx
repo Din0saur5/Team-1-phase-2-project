@@ -2,7 +2,7 @@
 import { useEffect, useState  } from 'react';
 import GamerForm from '../components/GamerForm';
 import Navbar from "../components/Navbar.jsx"
-import Countdown from "../components/countdown.jsx"
+import Countdown from "../components/Countdown.jsx"
 import SearchBar from "../components/SearchBar.jsx"
 import '../components/SignUp.css'
 import UserList from '../components/UserList.jsx';
