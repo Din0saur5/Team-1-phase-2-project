@@ -13,7 +13,7 @@ function NavbarComponent({ currentPage }) {
   const { toggleMusic } = useAudio();
 
   return (
-    <Navbar bg="dark" variant="dark" style={{padding:15}}>
+    <Navbar bg="dark" variant="dark" style={{position:'absolute', zIndex:'999', padding:15}}>
       <Container>
         <Navbar.Brand className='brand' as={Link} to="/" onClick={() => { window.scrollTo({ top: document.body.scrollHeight, behavior: 'instant' }) }}><GiAbstract097 size={40} />&nbsp;&nbsp;DreamScape</Navbar.Brand>
         <Nav variant="underline" defaultActiveKey={currentPage} className="ms-auto">

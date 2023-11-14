@@ -15,7 +15,7 @@ import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SignUp from "./routes/SignUp";
 import { AudioProvider } from './components/AudioContext';
-import Sandbox from "./routes/Sandbox";
+
 
 const AppLayout = () => {
   return (
@@ -47,10 +47,6 @@ const router = createBrowserRouter([
       {
         path: "demo",
         element: <Demo />,
-      },
-      {
-        path: "sandbox",
-        element: <Sandbox />,
       }
     ],
   },

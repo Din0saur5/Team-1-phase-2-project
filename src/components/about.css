@@ -121,15 +121,5 @@ p {
   height: 250px; 
 }
 
-img {
-  max-width: 100%;
-}
 
-.video-container {
-  max-width: 50%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  z-index: 1;
-}
 

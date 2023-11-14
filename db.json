@@ -356,38 +356,38 @@
       {
         "id": 1  ,
         "title": "Intro:",
-        "content": "Welcome to DreamScape, where the boundaries between imagination and reality blur, ushering you into a realm of limitless possibilities. In the not-so-distant future, DreamScape: Beyond Imagination stands as the pinnacle of hyper-realistic virtual reality, an oasis where your most extravagant dreams come to life."
-      },
+        "contents":[ "Welcome to DreamScape, where the boundaries between imagination and"," reality blur, ushering you into a realm of limitless possibilities.","In the not-so-distant future, DreamScape: Beyond Imagination stands as the"," pinnacle of hyper-realistic virtual reality, an oasis where your most extravagant dreams come to life."
+  ]},
       {
         "id": 2, 
         "title": "Endless Freedom:" ,
-        "content": "Our innovative DreamScape Generator empowers users with unparalleled freedom. Unleash your creativity as you transform your wildest fantasies into vivid, interactive experiences. From enchanted fantasy realms to futuristic sci-fi cities, the only limit is the expanse of your imagination."
-      },
+        "contents": ["Our innovative DreamScape Generator empowers users with unparalleled"," freedom. Unleash your creativity as you transform your wildest fantasies into vivid,"," interactive experiences. From enchanted fantasy realms to futuristic sci-fi cities,"," the only limit is the expanse of your imagination."
+  ]},
       {
         "id": 3, 
         "title": "Craft Your World:" ,
-        "content": "Take control of your dreamscape. Craft landscapes, design architecture, and populate your virtual world with the characters of your creation. The DreamScape crafting tools provide the means to shape every detail, ensuring that your dreams unfold exactly as you envision them."
-      },
+        "contents": ["Take control of your dreamscape. Craft landscapes, design architecture,"," and populate your virtual world with the characters of your creation. The DreamScape"," crafting tools provide the means to shape every detail, ensuring that"," your dreams unfold exactly as you envision them."
+  ]},
       {
         "id": 4, 
         "title": "Unravel Collective Realms:" ,
-        "content": "As you delve into your personal dreamscape, discover a hidden collective realm shared by DreamScape enthusiasts. Collaborate with fellow dreamers to uncover the mysteries that lie beneath the surface. The interconnected narratives and challenges will test your imagination and forge bonds with others navigating this fantastical journey."
-      },
+        "contents": ["Discover a hidden collective realm shared by DreamScape enthusiasts. ","Collaborate with fellow dreamers to uncover the mysteries that"," lie  beneath the surface.The interconnected narratives"," and challenges will test your imagination and ","forge bonds with others navigating this fantastical journey."
+      ]},
       {
         "id": 5, 
         "title": "Embark on the Journey:" ,
-        "content": "DreamScape is not just a virtual reality; it's a journey into the uncharted territories of your mind. Immerse yourself in an experience where creativity knows no bounds, challenges fuel growth, and connections with others transcend the digital realm."
-      },
+        "contents":[ "DreamScape is not just a virtual reality; it's a journey into the"," uncharted territories of your mind. Immerse yourself in an experience"," where creativity knows no bounds, challenges fuel growth, and ","connections with others transcend the digital realm."
+     ] },
       {
         "id": 6, 
         "title": "Dream Together:" ,
-        "content": "DreamScape beckons dreamers from all walks of life. Whether you're a seasoned explorer or a novice dream-weaver, the collective DreamScape community is a tapestry of diverse stories and visions. Together, we dream, explore, and redefine the very fabric of reality."
-      },
+        "contents": ["DreamScape beckons dreamers from all walks of life. Whether"," you're a seasoned explorer or a novice dream-weaver,"," the collective DreamScape community is a tapestry of diverse stories and visions. ","Together, we dream, explore, and redefine the very fabric of reality."
+     ] },
       {
         "id": 7, 
         "title": "Unintended Consequences:" ,
-        "content": "Beyond the beauty and marvels of DreamScape, unintended consequences await. Join forces with other players to unveil the truth behind these unforeseen twists. Navigating through a web of stories and challenges, your decisions will shape the destiny of your dreamscape and influence the collective realm."
-      }
+        "contents": ["Beyond the beauty and marvels of DreamScape, unintended ","consequences await. Join forces with other players to unveil the truth behind these unforeseen twists. Navigating through a web of stories and challenges, your decisions will shape the destiny of your dreamscape and influence the collective realm."
+      ]}
       
   ]
 }

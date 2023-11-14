@@ -4,9 +4,11 @@ const InfoBall = ({id, handleClick}) => {
  
 
 
+
+
   return (
-    <div style={{height:'15%', width:'25%'}}  className='infoball-container' onClick={()=>{handleClick(id)}}>
-      <img style={{height:'100%', width:'auto'}}src='/images/infoball.png'/> 
+    <div style={{height:'15%', width:'25%'}}  className='infoball-container' onClick={(e)=>{handleClick(e,id)}}>
+      <img  style={{height:'100%', width:'auto'}}src='/images/infoball.png'/> 
     </div>
   )
 }

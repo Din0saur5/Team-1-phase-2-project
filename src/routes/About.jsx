@@ -1,39 +1,72 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import '../components/countdown.css';
-import Carousel from 'react-bootstrap/Carousel';
-import CarouselVideos from '../components/CarouselVideos';
-import CarouselImages from '../components/CarouselImages.jsx';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import NavbarComponent from '../components/Navbar.jsx';
-import Countdown from '../components/Countdown.jsx';
-import '../components/about.css';
+import React, { Fragment, useState } from 'react'
+ import '../components/sandbox.css'
+import InfoPopUp from '../components/InfoPopUp.jsx'
+import InfoBall from '../components/InfoBall.jsx'
+import Countdown from '../components/Countdown.jsx'
+import Navbar from '../components/Navbar.jsx'
+import '../components/Button.css'
 import { useAudio } from '../components/AudioContext.jsx'; 
+import Carousel from 'react-bootstrap/Carousel';
+import CarouselVideos from '../components/CarouselVideos.jsx';
+import CarouselImages from '../components/CarouselImages.jsx';
 
-const About = () => {
-  const { toggleMusic } = useAudio();
+const Sandbox = () => {
+  
+  const [show, setShow] = useState(false)
+  const [showMovies, setShowMovies] = useState(false)
+  const [removeBeam, setRemoveBeam] = useState(false)
+  
+  const [infoData, setInfoData] = useState({
+    id: 0,
+    title: '',
+    contents: [],
+   })
+  
+    function handleClick(e, id){
+      if(show){
+       
+      if(id === infoData.id){
+        setShow(false)
+        
+      }
+      }else{
+        setShow(true)
+      
+    }
+      fetch(`http://localhost:3000/about/${id}`)
+      .then(resp=>resp.json())
+      .then(data=>{
+       setInfoData(data)
+      })
+    }
 
-  return (
-    <div className="about">
-      <NavbarComponent currentPage={"/about"} />
-      <div className="about-header">
-        <h1>DreamScape: VR Beyond Imagination</h1>
-      </div>
-
-      <div className="countdown-container">
-        <Countdown currentPage={''}/>
-      </div>
+    let beamRemove = ''
+  const displayMovies = () => {
+    setShowMovies(!showMovies)
     
-      <div className="guide-intro">
-        <section className="about-section">
-          <h2>Explore DreamScape</h2>
-            <p> In a near-future world, "DreamScape: Beyond Imagination" offers boundless freedom, allowing users to bring their wildest dreams to life in hyper-realistic virtual reality. The DreamScape Generator turns fantasies into immersive realities, with users crafting their worlds, from fantasy realms to sci-fi cities. As players explore their own dreamscapes and unravel the mysteries of a hidden collective realm, they must band together to uncover the truth behind unintended consequences and navigate a web of stories and challenges.</p>
-        </section>
+  }
+ 
+  
+  
+    return (
+      
+    <div className='about-bg'>
+      <Navbar currentPage= {"/about"}/>
+      <button className='movies-btn btn style-1' onClick={()=>{displayMovies()}}>Movies</button>
+      <div  className={showMovies? `beam-container beam-me-up ${beamRemove}`:'beam-container beam-me-down'} >
+        <div className='countdown-sand'>
+      <Countdown currentPage={''} />
       </div>
-
-      <div className="guide-video">
-        <Carousel>
-          <Carousel.Item>
+        <div className= 'beam'>
+        </div>
+      </div>
+      <img className='screen-hide' src='/images/screen-hide3.png'/>
+      <div className='screen-deep'></div>
+      <div  className={showMovies? 'movie-container':'remove'}>
+      
+        <Carousel className='carousel-ab'
+         >
+          <Carousel.Item >
             <CarouselVideos
               text="Sample VR Gameplay Clip #1"
               videoSrc="../../public/videos/VR1.mp4"
@@ -48,36 +81,24 @@ const About = () => {
           </Carousel.Item>
           
         </Carousel>
-      </div>
-
-      <div className="guide-platform">
-        <p>"DreamScape" is a journey of limitless self-discovery, cooperation, and immersive exploration, where your imagination knows no bounds. Craft your dream world, connect with others in a bustling virtual metropolis, and dive into adventures of wonder and mystery. In this boundless realm of dreams, what will you create, and where will your journey take you?.</p>
-      </div>
-
-      <div className="guide-screenshot">
-          <Carousel>
-            <Carousel.Item>
-            <CarouselImages 
-              text="Sample VR Gameplay Screenshot #1"
-              imageSrc="https://i.pcmag.com/imagery/lineups/0051F70Ae3AgFubSiV7XUoe-1.fit_lim.size_1600x900.v1593113164.jpg" />
-          
-            </Carousel.Item>
-            <Carousel.Item>
-            <CarouselImages 
-              text="Sample VR Gameplay Screenshot #2"
-              imageSrc="https://www.cnet.com/a/img/resize/b92d26f1a9d9ee8847cda813f760fb0c7b233176/hub/2021/07/20/005cf121-512a-42a8-8abb-39e0045e8af0/demeo-realm-of-rat-king-cards-screenshot.jpg?auto=webp&width=1200" />
-
-            </Carousel.Item>
-        </Carousel>
-      </div>
       
-      <div className="empty-space"></div>
+      </div>
+      <div className='pop-up-container A'>
+         <InfoBall id={1} handleClick={handleClick}/>
+         <InfoBall id={2} handleClick={handleClick}/>
+         <InfoBall id={3} handleClick={handleClick}/>
 
-<footer className="about-footer">
-  <h6>&copy; {new Date().getFullYear()} JDM Games Inc. All rights reserved.</h6>
-</footer>
-</div>
-);
-};
+      </div>
+      <div className='pop-up-container B'>
+         <InfoBall id={4} handleClick={handleClick}/>
+         <InfoBall id={5} handleClick={handleClick}/>
+         <InfoBall id={6} handleClick={handleClick}/>
 
-export default About;
+      </div>
+      <InfoPopUp show={show} infoData={infoData} />
+    </div>
+    
+  )
+}
+
+export default Sandbox
