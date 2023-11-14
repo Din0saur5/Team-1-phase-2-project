@@ -22,7 +22,7 @@ const Sandbox = () => {
     contents: [],
    })
   
-    function handleClick(e, id){
+    function handleClick(id){
       if(show){
        
       if(id === infoData.id){
