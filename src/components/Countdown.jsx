@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './countdown.css';
 
-const CountdownTarget = new Date("2024-01-01T23:59:59");
+const CountdownTarget = new Date("2025-01-01T23:59:59");
 
 const formatTimeUnit = (unit) => {
   return unit.toString().padStart(2, '0');
